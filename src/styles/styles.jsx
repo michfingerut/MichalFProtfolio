@@ -246,6 +246,7 @@ const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
+  min-height: ${pageHeight};
   background-color: ${secondaryBackgroundColor};
   flex-direction: column;
   align-items: center;
@@ -320,6 +321,8 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  min-height: 50vh;
+  justify-content: center;
   background-color: ${primaryBackgroundColor};
 `;
 
