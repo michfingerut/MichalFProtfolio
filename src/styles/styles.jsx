@@ -225,7 +225,7 @@ const FooterIconContainer = styled.div`
     transition: color 0.3s ease;
 
     &:hover {
-      color: ${buttonColor}; /* Change hover color if needed */
+      color: ${buttonColor};
     }
   }
 `;
@@ -244,7 +244,6 @@ const FooterLink = styled.a`
 
 const ProjectsContainer = styled.div`
   display: flex;
-
   justify-content: center;
   padding: 40px;
   background-color: ${secondaryBackgroundColor};
@@ -291,7 +290,6 @@ const TechStack = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  flex-direction: row;
 `;
 
 const TechItem = styled.span`
@@ -337,7 +335,7 @@ const GoUpButtonStyle = styled.button`
   z-index: 10;
   transition:
     background-color 0.3s ease,
-    transform 0.3s ease;
+    transform 0.3;
 `;
 
 export {
