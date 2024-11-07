@@ -7,6 +7,7 @@ import {
   TechStack,
   TechItem,
 } from '../styles/styles';
+import GoUpButton from './GoUpButton';
 
 function About() {
   const techStack = [
@@ -182,6 +183,7 @@ function About() {
           </ul>
         </AboutSecondaryContainer>
       </AboutBoxesContainer>
+      <GoUpButton />
     </AboutContainer>
   );
 }

@@ -1,5 +1,5 @@
 import { ContactInfo, ContactContainer } from '../styles/styles';
-
+import GoUpButton from './GoUpButton';
 function ContactPage() {
   return (
     <ContactContainer id="contact-section">
@@ -25,6 +25,7 @@ function ContactPage() {
         <strong>Email:</strong>{' '}
         <a href="mailto:michfingerut@gmail.com">michfingerut@gmail.com</a>
       </ContactInfo>
+      <GoUpButton />
     </ContactContainer>
   );
 }

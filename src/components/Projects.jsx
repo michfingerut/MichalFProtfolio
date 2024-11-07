@@ -9,6 +9,7 @@ import {
   TechItem,
 } from '../styles/styles';
 import knGroupPage from '../assets/kn_group_page.png';
+import GoUpButton from './GoUpButton';
 
 function Projects() {
   const project = {
@@ -44,7 +45,8 @@ function Projects() {
           </ProjectContent>
           <ProjectImage src={knGroupPage} alt="Project screenshot" />
         </ProjectCard>
-      </div>
+      </div>{' '}
+      <GoUpButton />
     </ProjectsContainer>
   );
 }

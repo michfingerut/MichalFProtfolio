@@ -325,6 +325,21 @@ const ContactContainer = styled.div`
   background-color: ${primaryBackgroundColor};
 `;
 
+const GoUpButtonStyle = styled.button`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 10;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -350,6 +365,7 @@ export {
   TechItem,
   ContactInfo,
   ContactContainer,
+  GoUpButtonStyle,
 
   //color
   primaryBackgroundColor,
