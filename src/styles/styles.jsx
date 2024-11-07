@@ -91,7 +91,7 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   }
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -333,7 +333,6 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  min-height: 50vh;
   justify-content: center;
   background-color: ${primaryBackgroundColor};
 `;
