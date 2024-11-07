@@ -36,10 +36,7 @@ function About() {
               development, showcasing adaptability, a strong learning mindset,
               and a commitment to continuous growth. Results-oriented Software
               Developer with a proven track record in leading complex projects
-              and products with significant impact. Highly motivated,
-              tech-savvy, problem solver, and collaborative team player,
-              passionate about cutting-edge technologies and thriving in dynamic
-              environments.
+              and products with significant impact.
             </p>
           </div>
           <img src={image} />

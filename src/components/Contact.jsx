@@ -1,5 +1,6 @@
 import { ContactInfo, ContactContainer } from '../styles/styles';
 import GoUpButton from './GoUpButton';
+
 function ContactPage() {
   return (
     <ContactContainer id="contact-section">
@@ -12,12 +13,20 @@ function ContactPage() {
           maxWidth: '800px',
         }}
       >
-        Are you looking for a skilled software developer to bring your ideas to
-        life? Whether you need help with web development, building a scalable
-        application, or just want to discuss the latest in tech, I’m here to
-        help! Feel free to reach out if you have any questions or are interested
-        in collaborating on a project. You can click on the icons below to
-        contact me directly through WhatsApp or other platforms.
+        <p>
+          Are you looking for a talented software developer to join your team? I
+          specialize in web development, building scalable applications, and
+          staying up-to-date with the latest in technology.
+        </p>
+        <p>
+          I am eager to contribute to your projects and bring fresh ideas to the
+          table. If you're looking for someone passionate and dedicated to
+          delivering high-quality solutions, feel free to reach out.
+        </p>
+        <p>
+          You can contact me directly through the icons below via WhatsApp or
+          other platforms.
+        </p>
       </p>
       <ContactInfo>
         <strong>Phone:</strong> 054-2398171

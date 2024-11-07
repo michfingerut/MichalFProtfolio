@@ -258,12 +258,8 @@ const ProjectCard = styled.div`
   background-color: ${secondaryBackgroundColor};
   ${borders}
   padding: 20px;
-  flex-direction: row;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 20px;
-  }
+  flex-direction: column;
+  gap: 20px;
 `;
 
 const ProjectContent = styled.div`
@@ -302,11 +298,27 @@ const TechItem = styled.span`
 `;
 
 const ProjectImage = styled.img`
-  width: 500px;
-  height: 350px;
+  width: 50%;
+  height: 70%;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 const ContactInfo = styled.p`
@@ -367,6 +379,7 @@ export {
   ContactInfo,
   ContactContainer,
   GoUpButtonStyle,
+  ImageContainer,
 
   //color
   primaryBackgroundColor,

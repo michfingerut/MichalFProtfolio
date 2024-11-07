@@ -7,8 +7,10 @@ import {
   ProjectDescription,
   TechStack,
   TechItem,
+  ImageContainer,
 } from '../styles/styles';
 import knGroupPage from '../assets/kn_group_page.png';
+import knEdit from '../assets/kn_edit.png';
 import GoUpButton from './GoUpButton';
 
 function Projects() {
@@ -43,7 +45,10 @@ function Projects() {
               ))}
             </TechStack>
           </ProjectContent>
-          <ProjectImage src={knGroupPage} alt="Project screenshot" />
+          <ImageContainer>
+            <ProjectImage src={knGroupPage} alt="Project screenshot" />
+            <ProjectImage src={knEdit} alt="Project screenshot" />
+          </ImageContainer>
         </ProjectCard>
       </div>{' '}
       <GoUpButton />
