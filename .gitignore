@@ -1,0 +1,12 @@
+# Ignore client node_modules
+node_modules/
+build/
+
+# Exclude specific files in any directory
+!.gitignore
+!**/*.md
+!**/*.html
+!**/*.css
+!**/*.js
+!**/*.jsx
+!**/*.json
