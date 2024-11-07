@@ -92,8 +92,6 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
 
   @media (max-width: 768px) {
     width: 90%;
-    grid-template-columns: 1fr;
-    gap: 30px;
   }
 
   img {
