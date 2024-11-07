@@ -13,8 +13,9 @@ import {
   FullscreenModal,
   FullscreenImageContainer,
   FullscreenArrowButton,
+  CloseButton,
 } from '../styles/styles';
-import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { ArrowBack, ArrowForward, Close } from '@mui/icons-material';
 import knEdit from '../assets/kn_edit.png';
 import knGroupPage from '../assets/kn_group_page.png';
 import knLogin from '../assets/kn_login.png';
@@ -88,18 +89,30 @@ function Projects() {
         {isFullscreen && (
           <FullscreenModal>
             <FullscreenImageContainer>
-              <FullscreenArrowButton onClick={handlePrevImage}>
-                <ArrowBack />
+              {/* Left Arrow */}
+              <FullscreenArrowButton
+                onClick={handlePrevImage}
+                style={{ left: '10px' }}
+              >
+                <ArrowBack style={{ color: 'black' }} />
               </FullscreenArrowButton>
+
               <CarouselImage
                 src={project.images[currentImageIndex]}
                 alt="Fullscreen project screenshot"
               />
-              <FullscreenArrowButton onClick={handleNextImage}>
-                <ArrowForward />
+
+              {/* Right Arrow */}
+              <FullscreenArrowButton
+                onClick={handleNextImage}
+                style={{ right: '10px' }}
+              >
+                <ArrowForward style={{ color: 'black' }} />
               </FullscreenArrowButton>
+              <CloseButton onClick={handleCloseFullscreen}>
+                <Close style={{ color: 'black', fontSize: '2rem' }} />
+              </CloseButton>
             </FullscreenImageContainer>
-            <button onClick={handleCloseFullscreen}>Close</button>
           </FullscreenModal>
         )}
       </div>

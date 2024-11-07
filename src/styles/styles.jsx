@@ -143,7 +143,6 @@ const AboutBoxesContainer = styled.div`
     height: 40px;
     display: flex;
     align-items: center;
-    position: sticky;
     top: 0;
     z-index: 1;
   }
@@ -326,51 +325,51 @@ const FullscreenModal = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
 `;
 
 const FullscreenImageContainer = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
 `;
 
 const FullscreenArrowButton = styled.button`
-  background: transparent;
+  background: none;
   border: none;
-  color: #fff;
-  font-size: 3rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
   cursor: pointer;
 
-  &:hover {
-    color: #d46a34;
-  }
-
-  &.left {
-    left: 10px;
-  }
-
-  &.right {
-    right: 10px;
+  &:focus {
+    outline: none;
   }
 `;
 
 const CarouselImage = styled.img`
-  width: 800px;
-  height: 600px;
   object-fit: cover;
   border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  objectfit: contain;
 `;
 
+const CloseButton = styled.div`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 20;
+`;
 export {
   GlobalStyle,
   BaseContainer,
@@ -399,6 +398,7 @@ export {
   FullscreenModal,
   FullscreenImageContainer,
   FullscreenArrowButton,
+  CloseButton,
 
   //color
   primaryBackgroundColor,
