@@ -39,6 +39,15 @@ const BaseContainer = styled.div`
 
 const AboutContainer = styled(BaseContainer)`
   background-color: ${primaryBackgroundColor};
+
+  @media (max-width: 1024px) {
+    height: auto;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -62,11 +71,24 @@ const SecondaryContainer = styled.div`
 
 const AboutSecondaryContainer = styled(SecondaryContainer)`
   width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 50px;
   justify-items: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
   img {
     width: 200px;
@@ -78,20 +100,17 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
 `;
 
 const AboutBoxesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  width: em;
+  width: 70%;
   box-sizing: border-box;
 
   @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    width: 100%;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
   }
 
   & > div {
@@ -101,10 +120,19 @@ const AboutBoxesContainer = styled.div`
     height: 350px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     padding: 20px;
     gap: 10px;
     position: relative;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+
+    @media (max-width: 1024px) {
+      flex: 1 1 calc(50% - 20px);
+    }
+
+    @media (max-width: 768px) {
+      flex: 1 1 100%;
+    }
   }
 
   h1 {
@@ -137,24 +165,29 @@ const NavContainer = styled.div`
 
 const NavStyle = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: ${secondaryBackgroundColor};
   padding: 15px 30px;
   position: sticky;
   top: 0;
-  zindex: 1000;
+  z-index: 1000;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const LinkStyle = styled(Link)`
   color: ${primaryText};
   margin: 0 25px;
-  fontsize: 18px;
-  fontweight: 600;
-  texttransform: uppercase;
-  letterspacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   position: relative;
   padding: 5px 0;
   cursor: pointer;
@@ -174,8 +207,6 @@ export {
   NavStyle,
   NavContainer,
   LinkStyle,
-
-  //colors
   primaryBackgroundColor,
   secondaryBackgroundColor,
   primaryText,
