@@ -20,6 +20,7 @@ function Projects() {
       'Node.js',
       'JavaScript',
       'Express',
+      'Sequelize',
       'Material UI',
       'styled components',
       'Jest',
