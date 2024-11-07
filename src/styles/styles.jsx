@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
 import { Link } from 'react-scroll';
 
@@ -10,6 +10,13 @@ const buttonColor = '#d46a34';
 const hoverColor = '#f1c40f';
 const ctaColor = '#6db98e';
 const borderColor = '#e0e0e0';
+
+const pageHeight = '100vh';
+
+const borders = css`
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+`;
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -33,7 +40,7 @@ const BaseContainer = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 100vh;
+  height: ${pageHeight};
   background-color: ${primaryBackgroundColor};
 `;
 
@@ -53,7 +60,7 @@ const AboutContainer = styled(BaseContainer)`
 const HeaderContainer = styled.div`
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: ${pageHeight};
   text-align: center;
   background-image: url(${backgroundImage});
   background-size: cover;
@@ -64,8 +71,7 @@ const HeaderContainer = styled.div`
 const SecondaryContainer = styled.div`
   background-color: ${secondaryBackgroundColor};
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  ${borders}
   border: 1px solid ${borderColor};
 `;
 
@@ -115,8 +121,7 @@ const AboutBoxesContainer = styled.div`
 
   & > div {
     background-color: ${secondaryBackgroundColor};
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    ${borders}
     height: 350px;
     display: flex;
     flex-direction: column;
@@ -239,26 +244,18 @@ const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
-  background-color: #f5f5f5;
+  background-color: ${primaryBackgroundColor};
   flex-direction: column;
   align-items: center;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    padding: 20px;
-  }
+  height: ${pageHeight};
 `;
 
 const ProjectCard = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: ${secondaryBackgroundColor};
+  ${borders}
   padding: 20px;
-  max-width: 1200px;
-  gap: 40px;
   flex-direction: row;
 
   @media (max-width: 1024px) {
@@ -276,13 +273,13 @@ const ProjectContent = styled.div`
 `;
 
 const ProjectTitle = styled.h2`
-  color: #333333;
-  font-size: 2rem;
+  color: ${primaryText};
+  font-size: 1.5rem;
   margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
-  color: #333333;
+  color: ${primaryText};
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -295,17 +292,11 @@ const TechStack = styled.div`
 `;
 
 const TechItem = styled.span`
-  background-color: #d46a34;
+  background-color: ${buttonColor};
   color: white;
   font-size: 0.9rem;
   padding: 5px 10px;
   border-radius: 20px;
-`;
-
-const CarouselContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 const ProjectImage = styled.img`
@@ -313,63 +304,9 @@ const ProjectImage = styled.img`
   height: 350px;
   object-fit: cover;
   border-radius: 10px;
-  cursor: pointer;
   transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 `;
 
-const FullscreenModal = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-`;
-
-const FullscreenImageContainer = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const FullscreenArrowButton = styled.button`
-  background: none;
-  border: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-`;
-
-const CarouselImage = styled.img`
-  object-fit: cover;
-  border-radius: 10px;
-  max-width: 90%;
-  max-height: 90%;
-  objectfit: contain;
-`;
-
-const CloseButton = styled.div`
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  z-index: 20;
-`;
 export {
   GlobalStyle,
   BaseContainer,
@@ -393,12 +330,6 @@ export {
   ProjectDescription,
   TechStack,
   TechItem,
-  CarouselContainer,
-  CarouselImage,
-  FullscreenModal,
-  FullscreenImageContainer,
-  FullscreenArrowButton,
-  CloseButton,
 
   //color
   primaryBackgroundColor,

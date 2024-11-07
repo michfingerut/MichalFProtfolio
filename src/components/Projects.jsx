@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {
   ProjectsContainer,
   ProjectCard,
@@ -8,23 +7,10 @@ import {
   ProjectDescription,
   TechStack,
   TechItem,
-  CarouselContainer,
-  CarouselImage,
-  FullscreenModal,
-  FullscreenImageContainer,
-  FullscreenArrowButton,
-  CloseButton,
 } from '../styles/styles';
-import { ArrowBack, ArrowForward, Close } from '@mui/icons-material';
-import knEdit from '../assets/kn_edit.png';
 import knGroupPage from '../assets/kn_group_page.png';
-import knLogin from '../assets/kn_login.png';
-import knMain from '../assets/kn_main.png';
 
 function Projects() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
   const project = {
     name: 'Keeper Notes',
     description:
@@ -39,28 +25,6 @@ function Projects() {
       'Jest',
       'PostgreSQL',
     ],
-    images: [knEdit, knGroupPage, knLogin, knMain],
-  };
-
-  const handleNextImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % project.images.length,
-    );
-  };
-
-  const handlePrevImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + project.images.length) % project.images.length,
-    );
-  };
-
-  const handleImageClick = () => {
-    setIsFullscreen(true);
-  };
-
-  const handleCloseFullscreen = () => {
-    setIsFullscreen(false);
   };
 
   return (
@@ -77,44 +41,8 @@ function Projects() {
               ))}
             </TechStack>
           </ProjectContent>
-          <CarouselContainer>
-            <ProjectImage
-              src={project.images[currentImageIndex]}
-              alt="Project screenshot"
-              onClick={handleImageClick}
-            />
-          </CarouselContainer>
+          <ProjectImage src={knGroupPage} alt="Project screenshot" />
         </ProjectCard>
-
-        {isFullscreen && (
-          <FullscreenModal>
-            <FullscreenImageContainer>
-              {/* Left Arrow */}
-              <FullscreenArrowButton
-                onClick={handlePrevImage}
-                style={{ left: '10px' }}
-              >
-                <ArrowBack style={{ color: 'black' }} />
-              </FullscreenArrowButton>
-
-              <CarouselImage
-                src={project.images[currentImageIndex]}
-                alt="Fullscreen project screenshot"
-              />
-
-              {/* Right Arrow */}
-              <FullscreenArrowButton
-                onClick={handleNextImage}
-                style={{ right: '10px' }}
-              >
-                <ArrowForward style={{ color: 'black' }} />
-              </FullscreenArrowButton>
-              <CloseButton onClick={handleCloseFullscreen}>
-                <Close style={{ color: 'black', fontSize: '2rem' }} />
-              </CloseButton>
-            </FullscreenImageContainer>
-          </FullscreenModal>
-        )}
       </div>
     </ProjectsContainer>
   );
