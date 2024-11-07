@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
 import { Link } from 'react-scroll';
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const primaryBackgroundColor = '#f5f5f5';
 const secondaryBackgroundColor = 'rgba(255, 255, 255, 0.8)';
@@ -237,6 +238,141 @@ const FooterLink = styled.a`
   text-decoration: none;
 `;
 
+const ProjectsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 20px;
+  }
+`;
+
+const ProjectCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1200px;
+  gap: 40px;
+  flex-direction: row;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+`;
+
+const ProjectContent = styled.div`
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const ProjectTitle = styled.h2`
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+`;
+
+const ProjectDescription = styled.p`
+  color: #333333;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+`;
+
+const TechStack = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+const TechItem = styled.span`
+  background-color: #d46a34;
+  color: white;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+`;
+
+const CarouselContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ProjectImage = styled.img`
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const FullscreenModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+const FullscreenImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+`;
+
+const FullscreenArrowButton = styled.button`
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover {
+    color: #d46a34;
+  }
+
+  &.left {
+    left: 10px;
+  }
+
+  &.right {
+    right: 10px;
+  }
+`;
+
+const CarouselImage = styled.img`
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -252,6 +388,19 @@ export {
   FooterIconContainer,
   FooterText,
   FooterLink,
+  ProjectsContainer,
+  ProjectCard,
+  ProjectImage,
+  ProjectContent,
+  ProjectTitle,
+  ProjectDescription,
+  TechStack,
+  TechItem,
+  CarouselContainer,
+  CarouselImage,
+  FullscreenModal,
+  FullscreenImageContainer,
+  FullscreenArrowButton,
 
   //color
   primaryBackgroundColor,
