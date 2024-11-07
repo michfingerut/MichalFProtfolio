@@ -24,7 +24,7 @@ function About() {
               environments.
             </p>
           </div>
-          <img src={image} style={{ width: '200px', borderRadius: '38px' }} />
+          <img src={image} />
         </AboutSecondaryContainer>
       </Element>
       <AboutBoxesContainer>

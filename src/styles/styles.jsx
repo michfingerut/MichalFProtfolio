@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
+import { Link } from 'react-scroll';
 
 const primaryBackgroundColor = '#f5f5f5';
 const secondaryBackgroundColor = 'rgba(255, 255, 255, 0.8)';
@@ -71,7 +72,7 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
     width: 200px;
     border-radius: 38px;
     @media (max-width: 768px) {
-      width: 150px; /* Resize image on smaller screens */
+      width: 150px;
     }
   }
 `;
@@ -127,6 +128,41 @@ const AboutBoxesContainer = styled.div`
   }
 `;
 
+const NavContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+`;
+
+const NavStyle = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: ${secondaryBackgroundColor};
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  zindex: 1000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+`;
+
+const LinkStyle = styled(Link)`
+  color: ${primaryText};
+  margin: 0 25px;
+  fontsize: 18px;
+  fontweight: 600;
+  texttransform: uppercase;
+  letterspacing: 2px;
+  position: relative;
+  padding: 5px 0;
+  cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -135,4 +171,17 @@ export {
   SecondaryContainer,
   AboutSecondaryContainer,
   AboutBoxesContainer,
+  NavStyle,
+  NavContainer,
+  LinkStyle,
+
+  //colors
+  primaryBackgroundColor,
+  secondaryBackgroundColor,
+  primaryText,
+  secondaryText,
+  buttonColor,
+  hoverColor,
+  ctaColor,
+  borderColor,
 };
