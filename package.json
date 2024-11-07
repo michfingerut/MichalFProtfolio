@@ -1,8 +1,8 @@
 {
+  "homepage": "http://michfingerut.github.io/MichalFProtfolio/",
   "name": "ccd",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michfingerut.github.io/MichalFProtfolio/",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
