@@ -205,7 +205,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   justify-content: center;
   background-color: ${secondaryBackgroundColor};
-  padding: 20px;
+  padding-top: 20px;
   position: relative;
   bottom: 0;
   width: 100%;
