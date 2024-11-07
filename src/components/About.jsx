@@ -128,6 +128,12 @@ function About() {
             <br />
             2017-2021
           </p>
+          <h1>Army Service</h1>
+          <p>
+            Linkage & Recruitment NCO, Air Force, IDF
+            <br />
+            2014-2016
+          </p>
         </AboutSecondaryContainer>
 
         <AboutSecondaryContainer>
