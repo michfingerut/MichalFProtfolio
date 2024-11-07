@@ -196,6 +196,47 @@ const LinkStyle = styled(Link)`
     transform 0.3s ease;
 `;
 
+const FooterContainer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: ${primaryBackgroundColor};
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+`;
+
+const FooterIconContainer = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+
+  & > a {
+    color: ${primaryText};
+    font-size: 24px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${buttonColor}; /* Change hover color if needed */
+    }
+  }
+`;
+
+const FooterText = styled.p`
+  color: ${secondaryText};
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+`;
+
+const FooterLink = styled.a`
+  display: inline-block;
+  text-decoration: none;
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -207,6 +248,12 @@ export {
   NavStyle,
   NavContainer,
   LinkStyle,
+  FooterContainer,
+  FooterIconContainer,
+  FooterText,
+  FooterLink,
+
+  //color
   primaryBackgroundColor,
   secondaryBackgroundColor,
   primaryText,

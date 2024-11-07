@@ -3,33 +3,52 @@ import IconButton from '@mui/material/IconButton';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { FaGithub } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io';
-
 import { Tooltip } from '@mui/material';
-
-//TODO: add links
+import {
+  FooterContainer,
+  FooterIconContainer,
+  FooterText,
+  FooterLink,
+} from '../styles/styles';
 function Footer() {
   return (
-    <div>
-      <Tooltip text="Email">
-        <IconButton>
-          <EmailOutlinedIcon />
-        </IconButton>
-      </Tooltip>
+    <FooterContainer>
+      <FooterIconContainer>
+        <Tooltip title="Email">
+          <FooterLink href="mailto:michfingerut@gmail.com">
+            <IconButton>
+              <EmailOutlinedIcon />
+            </IconButton>
+          </FooterLink>
+        </Tooltip>
 
-      <Tooltip text="Git Hub">
-        <IconButton>
-          <FaGithub />
-        </IconButton>
-      </Tooltip>
+        <Tooltip title="GitHub">
+          <FooterLink
+            href="https://github.com/michfingerut"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <FaGithub />
+            </IconButton>
+          </FooterLink>
+        </Tooltip>
 
-      <Tooltip text="Linkedin">
-        <IconButton>
-          <IoLogoLinkedin />
-        </IconButton>
-      </Tooltip>
-      {/* TODO: add button return to the top */}
-      <p>Designed and developed by Michal Fingerut © 2024</p>
-    </div>
+        <Tooltip title="LinkedIn">
+          <FooterLink
+            href="https://www.linkedin.com/in/michal-fingerut/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <IoLogoLinkedin />
+            </IconButton>
+          </FooterLink>
+        </Tooltip>
+      </FooterIconContainer>
+
+      <FooterText>Designed and developed by Michal Fingerut © 2024</FooterText>
+    </FooterContainer>
   );
 }
 
