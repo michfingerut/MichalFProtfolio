@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   p , ul, li{
@@ -40,16 +41,16 @@ const BaseContainer = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
-  height: ${pageHeight};
   background-color: ${primaryBackgroundColor};
 `;
 
 const AboutContainer = styled(BaseContainer)`
   background-color: ${primaryBackgroundColor};
+  min-height: 100vh;
+  padding: 5em 0;
 
   @media (max-width: 1024px) {
     height: auto;
-    padding: 20px;
   }
 
   @media (max-width: 768px) {
@@ -76,7 +77,7 @@ const SecondaryContainer = styled.div`
 `;
 
 const AboutSecondaryContainer = styled(SecondaryContainer)`
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -87,7 +88,6 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   @media (max-width: 1024px) {
     flex-direction: column;
     width: 90%;
-    margin-top: 20px;
   }
 
   @media (max-width: 768px) {
@@ -103,6 +103,10 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
       width: 150px;
     }
   }
+
+  span {
+    display: block;
+  }
 `;
 
 const AboutBoxesContainer = styled.div`
@@ -110,22 +114,20 @@ const AboutBoxesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  width: 70%;
+  width: 60%;
   box-sizing: border-box;
+  margin-top: 20px;
 
   @media (max-width: 1024px) {
     flex-direction: column;
     width: 90%;
-    margin-top: 20px;
   }
 
   & > div {
     background-color: ${secondaryBackgroundColor};
     ${borders}
-    height: 350px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     gap: 10px;
     position: relative;
     flex: 1 1 calc(33.33% - 20px);
@@ -244,10 +246,9 @@ const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
-  background-color: ${primaryBackgroundColor};
+  background-color: ${secondaryBackgroundColor};
   flex-direction: column;
   align-items: center;
-  height: ${pageHeight};
 `;
 
 const ProjectCard = styled.div`
@@ -289,6 +290,7 @@ const TechStack = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  flex-direction: row;
 `;
 
 const TechItem = styled.span`

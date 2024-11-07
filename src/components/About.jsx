@@ -4,9 +4,24 @@ import {
   AboutContainer,
   AboutSecondaryContainer,
   AboutBoxesContainer,
+  TechStack,
+  TechItem,
 } from '../styles/styles';
 
 function About() {
+  const techStack = [
+    'JavaScript',
+    'TypeScript',
+    'Node.js',
+    'Express',
+    'Socket.io',
+    'Sequelize',
+    'Jest',
+    'PostgreSQL',
+    'Linux',
+    'MicroServices architecture',
+    'REST APIs',
+  ];
   return (
     <AboutContainer>
       <Element name="about-section">
@@ -25,6 +40,73 @@ function About() {
             </p>
           </div>
           <img src={image} />
+        </AboutSecondaryContainer>
+
+        <AboutSecondaryContainer
+          style={{
+            marginTop: '20px',
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+        >
+          <div>
+            <h1>Experience</h1>
+            <p
+              style={{
+                lineHeight: '1.6',
+                margin: '5px 0',
+              }}
+            >
+              Infinity Labs R&D
+              <br />
+              Full Stack Developer
+              <br />
+              2022-Present
+              <br />
+              <span
+                style={{
+                  display: 'block',
+                  marginTop: '10px',
+                  marginBottom: '5px',
+                }}
+              >
+                • Oversaw the entire development lifecycle of an educational web
+                application (MicroServices based) for students. Responsibilities
+                included designing and implementing REST APIs, adding new
+                features, and performing ongoing maintenance to improve
+                functionality and user experience.
+              </span>
+              <span>
+                • Acted as the main software developer in the team, defining
+                workflows, operational procedures, and guidelines for
+                development, and served as the primary point of contact for
+                support and technical questions from team members.
+              </span>
+              <span>
+                • Optimized system performance and improved response times by
+                80%.
+              </span>
+              <span>
+                • Deployed the application to production with CI/CD pipelines.
+              </span>
+              <span>
+                • Refactored the backend by independently rewriting all services
+                to extract the core framework, maintaining server functionality
+                while significantly improving performance, scalability, and the
+                overall development process.
+              </span>
+              <span>
+                • Mentored students in a software development bootcamp.
+              </span>
+            </p>
+          </div>
+          <div style={{ marginTop: '20px', textAlign: 'center' }}>
+            <TechStack>
+              {techStack.map((tech, index) => (
+                <TechItem key={index}>{tech}</TechItem>
+              ))}
+            </TechStack>
+          </div>
         </AboutSecondaryContainer>
       </Element>
       <AboutBoxesContainer>
@@ -45,29 +127,9 @@ function About() {
             2017-2021
           </p>
         </AboutSecondaryContainer>
+
         <AboutSecondaryContainer>
-          <h1>Experience</h1>
-          <p>
-            Infinity Labs R&D
-            <br />
-            Full Stack Developer
-            <br />
-            2022-Present
-            <br />
-            • Oversaw the entire development lifecycle of an educational web
-            application (MicroServices based) for students.
-            <br />
-            • Acted as the main software developer in the team.
-            <br />
-            • Optimized system performance and improved response times by 80%.
-            <br />
-            • Deployed the application to production with CI/CD pipelines.
-            <br />
-            • Mentored students in a software development bootcamp.
-            <br />
-          </p>
-        </AboutSecondaryContainer>
-        <AboutSecondaryContainer>
+          {/* //TODO!!!! */}
           <h1>Tech Stack</h1>
           <ul>
             <li>JavaScript, TypeScript</li>
