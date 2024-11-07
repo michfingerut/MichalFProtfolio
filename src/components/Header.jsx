@@ -8,6 +8,29 @@ import {
   primaryText,
 } from '../styles/styles';
 
+const linkStyle = {
+  color: primaryText,
+  margin: '0 25px',
+  fontSize: '18px',
+  fontWeight: '600',
+  textTransform: 'uppercase',
+  letterSpacing: '2px',
+  position: 'relative',
+  padding: '5px 0',
+  cursor: 'pointer',
+  transition: 'color 0.3s ease, transform 0.3s ease',
+};
+
+const onOver = (e) => {
+  e.target.style.color = hoverColor;
+  e.target.style.transform = 'scale(1.1)';
+};
+
+const onOut = (e) => {
+  e.target.style.color = primaryText;
+  e.target.style.transform = 'scale(1)';
+};
+
 function Header() {
   return (
     <HeaderContainer id="header-container">
@@ -17,54 +40,30 @@ function Header() {
             <Link
               to="about-section"
               smooth={true}
-              style={{
-                color: primaryText,
-                margin: '0 25px',
-                fontSize: '18px',
-                fontWeight: '600',
-                textTransform: 'uppercase',
-                letterSpacing: '2px',
-                position: 'relative',
-                padding: '5px 0',
-                cursor: 'pointer',
-                transition: 'color 0.3s ease, transform 0.3s ease',
-              }}
-              onMouseOver={(e) => {
-                e.target.style.color = hoverColor;
-                e.target.style.transform = 'scale(1.1)';
-              }}
-              onMouseOut={(e) => {
-                e.target.style.color = primaryText;
-                e.target.style.transform = 'scale(1)';
-              }}
+              style={linkStyle}
+              onMouseOver={(e) => onOver(e)}
+              onMouseOut={(e) => onOut(e)}
             >
               About
             </Link>
             <Link
               to="projects-section"
               smooth={true}
-              style={{
-                color: primaryText,
-                margin: '0 25px',
-                fontSize: '18px',
-                fontWeight: '600',
-                textTransform: 'uppercase',
-                letterSpacing: '2px',
-                position: 'relative',
-                padding: '5px 0',
-                cursor: 'pointer',
-                transition: 'color 0.3s ease, transform 0.3s ease',
-              }}
-              onMouseOver={(e) => {
-                e.target.style.color = hoverColor;
-                e.target.style.transform = 'scale(1.1)';
-              }}
-              onMouseOut={(e) => {
-                e.target.style.color = primaryText;
-                e.target.style.transform = 'scale(1)';
-              }}
+              style={linkStyle}
+              onMouseOver={(e) => onOver(e)}
+              onMouseOut={(e) => onOut(e)}
             >
               Projects
+            </Link>
+
+            <Link
+              to="contact-section"
+              smooth={true}
+              style={linkStyle}
+              onMouseOver={(e) => onOver(e)}
+              onMouseOut={(e) => onOut(e)}
+            >
+              Contact Me
             </Link>
           </NavStyle>
         </NavContainer>

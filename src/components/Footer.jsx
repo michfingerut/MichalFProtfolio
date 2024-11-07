@@ -1,7 +1,7 @@
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io';
 import { Tooltip } from '@mui/material';
 import {
@@ -42,6 +42,18 @@ function Footer() {
           >
             <IconButton>
               <IoLogoLinkedin />
+            </IconButton>
+          </FooterLink>
+        </Tooltip>
+
+        <Tooltip title="WhatsApp">
+          <FooterLink
+            href="https://wa.me/0542398171"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <FaWhatsapp />
             </IconButton>
           </FooterLink>
         </Tooltip>

@@ -16,6 +16,8 @@ function About() {
     'Express',
     'Socket.io',
     'Sequelize',
+    'Vue.js',
+    'Element Plus',
     'Jest',
     'PostgreSQL',
     'Linux',
@@ -129,15 +131,48 @@ function About() {
         </AboutSecondaryContainer>
 
         <AboutSecondaryContainer>
-          {/* //TODO!!!! */}
           <h1>Tech Stack</h1>
           <ul>
-            <li>JavaScript, TypeScript</li>
-            <li>Node.js, Express.js</li>
-            <li>Socket.IO, Sequelize</li>
-            <li>Vue.js, PostgreSQL</li>
-            <li>CI/CD Pipelines</li>
-            <li>Docker, Git</li>
+            <li>
+              <strong>Languages:</strong> JavaScript, TypeScript, Java, C.
+            </li>
+            <li>
+              <strong>Backend Development:</strong> Node.js, Express.js,
+              Socket.IO, Sequelize.
+            </li>
+            <li>
+              <strong>Frontend Development:</strong> React, Vue.js.
+            </li>
+            <li>
+              <strong>UI Libraries:</strong> Material UI, Element Plus, Styled
+              Components.
+            </li>
+            <li>
+              <strong>Databases:</strong> PostgreSQL.
+            </li>
+            <li>
+              <strong>Version Control:</strong> Git.
+            </li>
+            <li>
+              <strong>Containerization:</strong> Docker.
+            </li>
+            <li>
+              <strong>Operating Systems:</strong> Linux.
+            </li>
+            <li>
+              <strong>Testing:</strong> Jest.
+            </li>
+            <li>
+              <strong>Programming Concepts:</strong> Object-Oriented
+              Programming, Data Structures, Design Patterns, Procedural
+              Programming, Multithreaded Development.
+            </li>
+            <li>
+              <strong>Architecture:</strong> Microservices.
+            </li>
+            <li>
+              <strong>SQL:</strong> SQL.
+            </li>
           </ul>
         </AboutSecondaryContainer>
       </AboutBoxesContainer>

@@ -46,7 +46,7 @@ const BaseContainer = styled.div`
 
 const AboutContainer = styled(BaseContainer)`
   background-color: ${primaryBackgroundColor};
-  min-height: 100vh;
+  min-height: ${pageHeight};
   padding: 5em 0;
 
   @media (max-width: 1024px) {
@@ -206,7 +206,7 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${primaryBackgroundColor};
+  background-color: ${secondaryBackgroundColor};
   padding: 20px;
   position: relative;
   bottom: 0;
@@ -244,6 +244,7 @@ const FooterLink = styled.a`
 
 const ProjectsContainer = styled.div`
   display: flex;
+
   justify-content: center;
   padding: 40px;
   background-color: ${secondaryBackgroundColor};
@@ -280,7 +281,7 @@ const ProjectTitle = styled.h2`
 `;
 
 const ProjectDescription = styled.p`
-  color: ${primaryText};
+  color: ${secondaryText};
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -309,6 +310,21 @@ const ProjectImage = styled.img`
   transition: transform 0.3s ease-in-out;
 `;
 
+const ContactInfo = styled.p`
+  font-size: 18px;
+  color: ${secondaryText};
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: ${primaryBackgroundColor};
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -332,6 +348,8 @@ export {
   ProjectDescription,
   TechStack,
   TechItem,
+  ContactInfo,
+  ContactContainer,
 
   //color
   primaryBackgroundColor,
