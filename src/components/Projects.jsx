@@ -64,42 +64,45 @@ function Projects() {
 
   return (
     <ProjectsContainer>
-      <ProjectCard>
-        <ProjectContent>
-          <ProjectTitle>{project.name}</ProjectTitle>
-          <ProjectDescription>{project.description}</ProjectDescription>
-          <TechStack>
-            {project.techStack.map((tech, index) => (
-              <TechItem key={index}>{tech}</TechItem>
-            ))}
-          </TechStack>
-        </ProjectContent>
-        <CarouselContainer>
-          <ProjectImage
-            src={project.images[currentImageIndex]}
-            alt="Project screenshot"
-            onClick={handleImageClick}
-          />
-        </CarouselContainer>
-      </ProjectCard>
-
-      {isFullscreen && (
-        <FullscreenModal>
-          <FullscreenImageContainer>
-            <FullscreenArrowButton onClick={handlePrevImage}>
-              <ArrowBack />
-            </FullscreenArrowButton>
-            <CarouselImage
+      <div id="projects-section">
+        <h1>Projects</h1>
+        <ProjectCard>
+          <ProjectContent>
+            <ProjectTitle>{project.name}</ProjectTitle>
+            <ProjectDescription>{project.description}</ProjectDescription>
+            <TechStack>
+              {project.techStack.map((tech, index) => (
+                <TechItem key={index}>{tech}</TechItem>
+              ))}
+            </TechStack>
+          </ProjectContent>
+          <CarouselContainer>
+            <ProjectImage
               src={project.images[currentImageIndex]}
-              alt="Fullscreen project screenshot"
+              alt="Project screenshot"
+              onClick={handleImageClick}
             />
-            <FullscreenArrowButton onClick={handleNextImage}>
-              <ArrowForward />
-            </FullscreenArrowButton>
-          </FullscreenImageContainer>
-          <button onClick={handleCloseFullscreen}>Close</button>
-        </FullscreenModal>
-      )}
+          </CarouselContainer>
+        </ProjectCard>
+
+        {isFullscreen && (
+          <FullscreenModal>
+            <FullscreenImageContainer>
+              <FullscreenArrowButton onClick={handlePrevImage}>
+                <ArrowBack />
+              </FullscreenArrowButton>
+              <CarouselImage
+                src={project.images[currentImageIndex]}
+                alt="Fullscreen project screenshot"
+              />
+              <FullscreenArrowButton onClick={handleNextImage}>
+                <ArrowForward />
+              </FullscreenArrowButton>
+            </FullscreenImageContainer>
+            <button onClick={handleCloseFullscreen}>Close</button>
+          </FullscreenModal>
+        )}
+      </div>
     </ProjectsContainer>
   );
 }

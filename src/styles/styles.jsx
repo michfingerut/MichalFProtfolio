@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
 import { Link } from 'react-scroll';
-import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const primaryBackgroundColor = '#f5f5f5';
 const secondaryBackgroundColor = 'rgba(255, 255, 255, 0.8)';
@@ -166,7 +165,6 @@ const NavContainer = styled.div`
 
 const NavStyle = styled.nav`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: ${secondaryBackgroundColor};
   padding: 15px 30px;

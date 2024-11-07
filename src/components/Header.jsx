@@ -10,7 +10,7 @@ import {
 
 function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer id="header-container">
       <SecondaryContainer>
         <NavContainer>
           <NavStyle>
@@ -39,6 +39,32 @@ function Header() {
               }}
             >
               About
+            </Link>
+            <Link
+              to="projects-section"
+              smooth={true}
+              style={{
+                color: primaryText,
+                margin: '0 25px',
+                fontSize: '18px',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '2px',
+                position: 'relative',
+                padding: '5px 0',
+                cursor: 'pointer',
+                transition: 'color 0.3s ease, transform 0.3s ease',
+              }}
+              onMouseOver={(e) => {
+                e.target.style.color = hoverColor;
+                e.target.style.transform = 'scale(1.1)';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = primaryText;
+                e.target.style.transform = 'scale(1)';
+              }}
+            >
+              Projects
             </Link>
           </NavStyle>
         </NavContainer>
