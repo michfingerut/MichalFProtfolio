@@ -285,6 +285,16 @@ const ProjectCard = styled.div`
   padding: 20px;
   flex-direction: column;
   gap: 20px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
 `;
 
 const ProjectContent = styled.div`
@@ -293,6 +303,11 @@ const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${ctaColor};
+  }
 `;
 
 const ProjectTitle = styled.h2`
@@ -306,6 +321,11 @@ const ProjectDescription = styled.p`
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${primaryText}; /* Brings focus to description text on hover */
+  }
 `;
 
 const TechStack = styled.div`
@@ -327,6 +347,14 @@ const ProjectImage = styled.img`
   height: 70%;
   object-fit: cover;
   border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+  }
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -337,7 +365,7 @@ const ProjectImage = styled.img`
 
 const ImageContainer = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 5px;
   flex-direction: row;
 
   @media (max-width: 1024px) {
