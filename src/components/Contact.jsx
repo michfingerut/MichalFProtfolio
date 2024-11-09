@@ -13,21 +13,16 @@ function ContactPage() {
           maxWidth: '800px',
         }}
       >
-        <p>
-          Are you looking for a talented software developer to join your team?
-        </p>
-        <p>
-          I specialize in web development, building scalable applications, and
-          staying up-to-date with the latest in technology.
-        </p>
-        <p>
-          I'm excited to contribute fresh ideas and deliver high-quality
-          solutions.
-        </p>
-        <p>
-          You can contact me directly through the icons below via WhatsApp or
-          other platforms.
-        </p>
+        Are you looking for a talented software developer to join your team?
+        <br />
+        I specialize in web development, building scalable applications, and
+        staying up-to-date with the latest in technology.
+        <br />
+        I'm excited to contribute fresh ideas and deliver high-quality
+        solutions.
+        <br />
+        You can contact me directly through the icons below via WhatsApp or
+        other platforms.
       </p>
       <ContactInfo>
         <strong>Phone:</strong> 054-2398171
