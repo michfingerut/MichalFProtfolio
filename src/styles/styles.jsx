@@ -83,7 +83,18 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   grid-template-columns: 1fr auto;
   gap: 50px;
   justify-items: center;
+  line-height: 1.6;
   align-items: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: ${secondaryBackgroundColor};
+  }
 
   @media (max-width: 1024px) {
     flex-direction: column;
@@ -97,13 +108,29 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   img {
     width: 200px;
     border-radius: 38px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    filter: grayscale(20%);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @media (max-width: 768px) {
       width: 150px;
     }
   }
 
-  span {
+  li,span {
     display: block;
+    display: block;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: ${primaryText}; 
+    }
+  }
   }
 `;
 

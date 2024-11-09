@@ -32,11 +32,11 @@ function About() {
           <div>
             <h1>About Me</h1>
             <p>
-              Successfully transitioned from a career in optometry to software
-              development, showcasing adaptability, a strong learning mindset,
-              and a commitment to continuous growth. Results-oriented Software
-              Developer with a proven track record in leading complex projects
-              and products with significant impact.
+              <span>
+                Successfully transitioned from a career in optometry to software
+                development, showcasing adaptability, a strong learning mindset,
+                and a commitment to continuous growth.
+              </span>
             </p>
           </div>
           <img src={image} />
@@ -57,12 +57,10 @@ function About() {
                 margin: '5px 0',
               }}
             >
-              Infinity Labs R&D
-              <br />
-              Full Stack Developer
-              <br />
-              2022-Present
-              <br />
+              <span>Infinity Labs R&D</span>
+              <span>Full Stack Developer</span>
+              <span>2022-Present</span>
+
               <span
                 style={{
                   display: 'block',
@@ -90,12 +88,6 @@ function About() {
                 • Deployed the application to production with CI/CD pipelines.
               </span>
               <span>
-                • Refactored the backend by independently rewriting all services
-                to extract the core framework, maintaining server functionality
-                while significantly improving performance, scalability, and the
-                overall development process.
-              </span>
-              <span>
                 • Mentored students in a software development bootcamp.
               </span>
             </p>
@@ -113,23 +105,18 @@ function About() {
         <AboutSecondaryContainer>
           <h1>Education</h1>
           <p>
-            Software Development Extensive Bootcamp
-            <br />
-            Infinity Labs R&D
-            <br />
+            <span>Software Development Extensive Bootcamp</span>
+            <span>Infinity Labs R&D</span>
             2022
             <br />
             <br />
-            BSC, Optometry (Cum Laude)
-            <br />
-            Bar Ilan University
-            <br />
+            <span>BSC, Optometry (Cum Laude)</span>
+            <span>Bar Ilan University</span>
             2017-2021
           </p>
           <h1>Army Service</h1>
           <p>
-            Linkage & Recruitment NCO, Air Force, IDF
-            <br />
+            <span>Linkage & Recruitment NCO, Air Force, IDF</span>
             2014-2016
           </p>
         </AboutSecondaryContainer>
@@ -148,14 +135,7 @@ function About() {
               <strong>Frontend Development:</strong> React, Vue.js.
             </li>
             <li>
-              <strong>UI Libraries:</strong> Material UI, Element Plus, Styled
-              Components.
-            </li>
-            <li>
-              <strong>Databases:</strong> PostgreSQL.
-            </li>
-            <li>
-              <strong>Version Control:</strong> Git.
+              <strong>Databases:</strong> PostgreSQL, MySQL.
             </li>
             <li>
               <strong>Containerization:</strong> Docker.
@@ -175,7 +155,11 @@ function About() {
               <strong>Architecture:</strong> Microservices.
             </li>
             <li>
-              <strong>SQL:</strong> SQL.
+              <strong>UI Libraries:</strong> Material UI, Element Plus, Styled
+              Components.
+            </li>
+            <li>
+              <strong>Version Control:</strong> Git.
             </li>
           </ul>
         </AboutSecondaryContainer>
