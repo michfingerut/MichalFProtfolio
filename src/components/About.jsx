@@ -32,11 +32,9 @@ function About() {
           <div>
             <h1>About Me</h1>
             <p>
-              <span>
-                Successfully transitioned from a career in optometry to software
-                development, showcasing adaptability, a strong learning mindset,
-                and a commitment to continuous growth.
-              </span>
+              Successfully transitioned from a career in optometry to software
+              development, showcasing adaptability, a strong learning mindset,
+              and a commitment to continuous growth.
             </p>
           </div>
           <img src={image} />
@@ -57,10 +55,12 @@ function About() {
                 margin: '5px 0',
               }}
             >
-              <span>Infinity Labs R&D</span>
-              <span>Full Stack Developer</span>
-              <span>2022-Present</span>
-
+              Infinity Labs R&D
+              <br />
+              Full Stack Developer
+              <br />
+              2022-Present
+              <br />
               <span
                 style={{
                   display: 'block',
@@ -105,18 +105,23 @@ function About() {
         <AboutSecondaryContainer>
           <h1>Education</h1>
           <p>
-            <span>Software Development Extensive Bootcamp</span>
-            <span>Infinity Labs R&D</span>
+            Software Development Extensive Bootcamp
+            <br />
+            Infinity Labs R&D
+            <br />
             2022
             <br />
             <br />
-            <span>BSC, Optometry (Cum Laude)</span>
-            <span>Bar Ilan University</span>
+            BSC, Optometry (Cum Laude)
+            <br />
+            Bar Ilan University
+            <br />
             2017-2021
           </p>
           <h1>Army Service</h1>
           <p>
-            <span>Linkage & Recruitment NCO, Air Force, IDF</span>
+            Linkage & Recruitment NCO, Air Force, IDF
+            <br />
             2014-2016
           </p>
         </AboutSecondaryContainer>

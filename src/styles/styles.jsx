@@ -84,18 +84,8 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   gap: 50px;
   justify-items: center;
   line-height: 1.6;
+
   align-items: center;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: ${secondaryBackgroundColor};
-  }
-
   @media (max-width: 1024px) {
     flex-direction: column;
     width: 90%;
@@ -108,29 +98,13 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   img {
     width: 200px;
     border-radius: 38px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    filter: grayscale(20%);
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
     @media (max-width: 768px) {
       width: 150px;
     }
   }
 
-  li,span {
+  span {
     display: block;
-    display: block;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: ${primaryText}; 
-    }
-  }
   }
 `;
 
@@ -217,7 +191,6 @@ const LinkStyle = styled(Link)`
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2px;
   position: relative;
   padding: 5px 0;
   cursor: pointer;
@@ -280,7 +253,7 @@ const ProjectsContainer = styled.div`
 const ProjectCard = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${secondaryBackgroundColor};
+  background-color: ${primaryBackgroundColor};
   ${borders}
   padding: 20px;
   flex-direction: column;
@@ -303,11 +276,6 @@ const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: ${ctaColor};
-  }
 `;
 
 const ProjectTitle = styled.h2`
@@ -321,11 +289,6 @@ const ProjectDescription = styled.p`
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: ${primaryText}; /* Brings focus to description text on hover */
-  }
 `;
 
 const TechStack = styled.div`
@@ -352,8 +315,8 @@ const ProjectImage = styled.img`
     box-shadow 0.3s ease;
 
   &:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth with shadow */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   @media (max-width: 1024px) {
