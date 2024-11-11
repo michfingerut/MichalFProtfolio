@@ -13,7 +13,7 @@ const GoUpButton = () => {
   };
 
   const toggleVisibility = () => {
-    setIsVisible(window.scrollY > 0);
+    setIsVisible(window.scrollY > 100);
   };
 
   useEffect(() => {

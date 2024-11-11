@@ -67,6 +67,13 @@ const HeaderContainer = styled.div`
   background-size: cover;
   background-position: center;
   color: ${primaryText};
+
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
 `;
 
 const SecondaryContainer = styled.div`
@@ -366,10 +373,8 @@ const GoUpButtonStyle = styled.button`
   transition:
     background-color 0.3s ease,
     transform 0.3s ease;
-  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
-  pointer-events: ${({ isVisible }) => (isVisible ? 'auto' : 'none')};
+  display: ${({ $isVisible }) => ($isVisible ? 'block' : 'none')};
 `;
-
 export {
   GlobalStyle,
   BaseContainer,
