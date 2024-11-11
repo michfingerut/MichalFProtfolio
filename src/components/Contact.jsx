@@ -1,4 +1,8 @@
-import { ContactInfo, ContactContainer } from '../styles/styles';
+import {
+  ContactInfo,
+  ContactContainer,
+  DownloadButton,
+} from '../styles/styles';
 
 function ContactPage() {
   return (
@@ -29,6 +33,10 @@ function ContactPage() {
         <strong>Email:</strong>{' '}
         <a href="mailto:michfingerut@gmail.com">michfingerut@gmail.com</a>
       </ContactInfo>
+
+      <a href="./Michal_Fingerut.pdf" download="Michal_Fingerut_CV">
+        <DownloadButton>Download My CV</DownloadButton>
+      </a>
     </ContactContainer>
   );
 }

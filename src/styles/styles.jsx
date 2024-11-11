@@ -375,6 +375,26 @@ const GoUpButtonStyle = styled.button`
     transform 0.3s ease;
   display: ${({ $isVisible }) => ($isVisible ? 'block' : 'none')};
 `;
+
+const DownloadButton = styled.button`
+  background-color: ${buttonColor};
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    background-color 0.3s ease,
+    transform 0s ease;
+
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
 export {
   GlobalStyle,
   BaseContainer,
@@ -402,6 +422,7 @@ export {
   ContactContainer,
   GoUpButtonStyle,
   ImageContainer,
+  DownloadButton,
 
   //color
   primaryBackgroundColor,

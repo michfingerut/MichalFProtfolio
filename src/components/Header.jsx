@@ -63,7 +63,7 @@ function Header() {
               onMouseOver={(e) => onOver(e)}
               onMouseOut={(e) => onOut(e)}
             >
-              Contact Me
+              Contact
             </Link>
           </NavStyle>
         </NavContainer>
