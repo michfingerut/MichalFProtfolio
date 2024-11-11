@@ -23,7 +23,7 @@ const GoUpButton = () => {
   }, []);
 
   return (
-    <GoUpButtonStyle onClick={scrollToTop} isVisible={isVisible}>
+    <GoUpButtonStyle onClick={scrollToTop} $isVisible={isVisible}>
       <FaArrowUp size={24} />
     </GoUpButtonStyle>
   );
