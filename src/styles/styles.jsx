@@ -365,7 +365,9 @@ const GoUpButtonStyle = styled.button`
   z-index: 10;
   transition:
     background-color 0.3s ease,
-    transform 0.3;
+    transform 0.3s ease;
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  pointer-events: ${({ isVisible }) => (isVisible ? 'auto' : 'none')};
 `;
 
 export {

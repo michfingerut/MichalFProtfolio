@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Projects from './components/Projects';
 import { GlobalStyle } from './styles/styles';
+import GoUpButton from './components/GoUpButton';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <GoUpButton />
     </div>
   );
 }
