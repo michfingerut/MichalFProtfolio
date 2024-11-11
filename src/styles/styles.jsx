@@ -115,59 +115,6 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
   }
 `;
 
-const AboutBoxesContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 60%;
-  box-sizing: border-box;
-  margin-top: 20px;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  & > div {
-    background-color: ${secondaryBackgroundColor};
-    ${borders}
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    flex: 1 1 calc(33.33% - 20px);
-    box-sizing: border-box;
-
-    @media (max-width: 1024px) {
-      flex: 1 1 calc(50% - 20px);
-    }
-
-    @media (max-width: 768px) {
-      flex: 1 1 100%;
-    }
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    background-color: ${secondaryBackgroundColor};
-    padding: 10px;
-    margin: 0;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    top: 0;
-    z-index: 1;
-  }
-
-  p,
-  ul {
-    font-size: 1rem;
-    overflow-y: auto;
-    padding-right: 10px;
-  }
-`;
-
 const NavContainer = styled.div`
   position: absolute;
   top: 0;
@@ -265,16 +212,6 @@ const ProjectCard = styled.div`
   padding: 20px;
   flex-direction: column;
   gap: 20px;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-
-  &:hover {
-    &:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-  }
 `;
 
 const ProjectContent = styled.div`
@@ -402,7 +339,6 @@ export {
   HeaderContainer,
   SecondaryContainer,
   AboutSecondaryContainer,
-  AboutBoxesContainer,
   NavStyle,
   NavContainer,
   LinkStyle,

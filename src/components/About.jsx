@@ -9,7 +9,7 @@ import {
 } from '../styles/styles';
 
 function About() {
-  const techStack = [
+  const techStackExp = [
     'JavaScript',
     'TypeScript',
     'Node.js',
@@ -21,8 +21,22 @@ function About() {
     'Jest',
     'PostgreSQL',
     'Linux',
+    'Git',
+    'Docker',
+    'AWS',
     'MicroServices architecture',
     'REST APIs',
+  ];
+
+  const techStackCourse = [
+    'C',
+    'Java',
+    'MySQL',
+    'Object-Oriented Programming',
+    'Data Structures',
+    'Design Patterns',
+    'Procedural Programming',
+    'Multithreaded Development',
   ];
   return (
     <AboutContainer>
@@ -93,81 +107,51 @@ function About() {
           </div>
           <div style={{ marginTop: '20px', textAlign: 'center' }}>
             <TechStack>
-              {techStack.map((tech, index) => (
+              {techStackExp.map((tech, index) => (
+                <TechItem key={index}>{tech}</TechItem>
+              ))}
+            </TechStack>
+          </div>
+        </AboutSecondaryContainer>
+
+        <AboutSecondaryContainer
+          style={{
+            marginTop: '20px',
+            display: 'flex',
+            flexDirection: 'row',
+          }}
+        >
+          <div style={{ width: '45%' }}>
+            <h1>Education</h1>
+            <p
+              style={{
+                lineHeight: '1.6',
+                margin: '5px 0',
+              }}
+            >
+              Software Development Extensive Bootcamp
+              <br />
+              Infinity Labs R&D
+              <br />
+              2022
+              <br />
+              <br />
+              BSC, Optometry (Cum Laude)
+              <br />
+              Bar Ilan University
+              <br />
+              2017-2021
+            </p>
+          </div>
+          <div style={{ width: '45%' }}>
+            <TechStack>
+              {techStackCourse.map((tech, index) => (
                 <TechItem key={index}>{tech}</TechItem>
               ))}
             </TechStack>
           </div>
         </AboutSecondaryContainer>
       </Element>
-      <AboutBoxesContainer>
-        <AboutSecondaryContainer>
-          <h1>Education</h1>
-          <p>
-            Software Development Extensive Bootcamp
-            <br />
-            Infinity Labs R&D
-            <br />
-            2022
-            <br />
-            <br />
-            BSC, Optometry (Cum Laude)
-            <br />
-            Bar Ilan University
-            <br />
-            2017-2021
-          </p>
-          <h1>Army Service</h1>
-          <p>
-            Linkage & Recruitment NCO, Air Force, IDF
-            <br />
-            2014-2016
-          </p>
-        </AboutSecondaryContainer>
-
-        <AboutSecondaryContainer>
-          <h1>Tech Stack</h1>
-          <ul>
-            <li>
-              <strong>Languages:</strong> JavaScript, TypeScript, Java, C.
-            </li>
-            <li>
-              <strong>Backend Development:</strong> Node.js, Express.js,
-              Socket.IO, Sequelize.
-            </li>
-            <li>
-              <strong>Frontend Development:</strong> React, Vue.js.
-            </li>
-            <li>
-              <strong>Databases:</strong> PostgreSQL, MySQL.
-            </li>
-            <li>
-              <strong>Containerization:</strong> Docker.
-            </li>
-            <li>
-              <strong>Operating Systems:</strong> Linux.
-            </li>
-            <li>
-              <strong>Testing:</strong> Jest.
-            </li>
-            <li>
-              <strong>Programming Concepts:</strong> Object-Oriented
-              Programming, Data Structures, Design Patterns, Procedural
-              Programming, Multithreaded Development.
-            </li>
-            <li>
-              <strong>Architecture:</strong> Microservices.
-            </li>
-            <li>
-              <strong>UI Libraries:</strong> Material UI, Element Plus, Styled
-              Components.
-            </li>
-            <li>
-              <strong>Version Control:</strong> Git.
-            </li>
-          </ul>
-        </AboutSecondaryContainer>
-      </AboutBoxesContainer>
     </AboutContainer>
   );
 }
