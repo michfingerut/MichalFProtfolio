@@ -69,7 +69,7 @@ function Header() {
         </NavContainer>
         <h1>Michal Fingerut</h1>
         <p>A Software Developer based in Central district, Israel.</p>
-        <p>Here you will find information about my skills, projects and more</p>
+        <p>Looking for the next challenge!</p>
       </SecondaryContainer>
     </HeaderContainer>
   );

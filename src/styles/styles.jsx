@@ -102,16 +102,16 @@ const AboutSecondaryContainer = styled(SecondaryContainer)`
     width: 90%;
   }
 
+  span {
+    display: block;
+  }
+
   img {
     width: 200px;
     border-radius: 38px;
     @media (max-width: 768px) {
       width: 150px;
     }
-  }
-
-  span {
-    display: block;
   }
 `;
 
