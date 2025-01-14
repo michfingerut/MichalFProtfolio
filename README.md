@@ -13,5 +13,5 @@ You can view my portfolio online at [https://michfingerut.github.io/MichalFProtf
 
 ## Contact Me
 
-- 📧 Email: your-michfingerut@gmail.com
+- 📧 Email: michfingerut@gmail.com
 - 🔗 LinkedIn: [Michal Fingerut](https://www.linkedin.com/in/michal-fingerut)
