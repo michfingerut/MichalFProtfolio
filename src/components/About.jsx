@@ -18,6 +18,7 @@ function About() {
     'Sequelize',
     'Vue.js',
     'Element Plus',
+    'axios',
     'Jest',
     'PostgreSQL',
     'Linux',

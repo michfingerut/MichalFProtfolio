@@ -24,6 +24,7 @@ function Projects() {
       'Express',
       'Sequelize',
       'Material UI',
+      'axios',
       'styled components',
       'Jest',
       'PostgreSQL',
