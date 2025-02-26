@@ -143,6 +143,7 @@ function About() {
                 • Developed and maintained a micro-service for guest users
                 invites management system
               </span>
+              <br />
               <span>
                 • Created and managed npm packages to be used across the app's
                 services.
