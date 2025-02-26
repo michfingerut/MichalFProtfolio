@@ -3,7 +3,6 @@ import image from '../assets/personal_pic.jpeg';
 import {
   AboutContainer,
   AboutSecondaryContainer,
-  AboutBoxesContainer,
   TechStack,
   TechItem,
 } from '../styles/styles';
@@ -16,17 +15,24 @@ function About() {
     'Express',
     'Socket.io',
     'Sequelize',
+    'Mongoose',
+    'React.js',
     'Vue.js',
+    'html',
+    'css',
     'Element Plus',
     'axios',
     'Jest',
+    'MongoDB',
     'PostgreSQL',
     'Linux',
     'Git',
     'Docker',
     'AWS',
+    'Service oriented architecture SOA',
     'MicroServices architecture',
     'REST APIs',
+    'Linux-based environment',
   ];
 
   const techStackCourse = [
@@ -51,7 +57,7 @@ function About() {
               and a commitment to continuous growth.
             </p>
           </div>
-          <img src={image} />
+          <img src={image} alt="selfie" />
         </AboutSecondaryContainer>
 
         <AboutSecondaryContainer
@@ -71,9 +77,9 @@ function About() {
             >
               Infinity Labs R&D
               <br />
-              Full Stack Developer
+              <b>Full Stack Developer - Dashboard team</b>
               <br />
-              2022-Present
+              2022-2024
               <br />
               <span
                 style={{
@@ -82,8 +88,8 @@ function About() {
                   marginBottom: '5px',
                 }}
               >
-                • Oversaw the entire development lifecycle of an educational web
-                application (MicroServices based) for students. Responsibilities
+                • Oversaw the entire development lifecycle of an educational
+                Saas web application (SOA based) for students. Responsibilities
                 included designing and implementing REST APIs, adding new
                 features, and performing ongoing maintenance to improve
                 functionality and user experience.
@@ -103,6 +109,43 @@ function About() {
               </span>
               <span>
                 • Mentored students in a software development bootcamp.
+              </span>
+            </p>
+            <br />
+            <p
+              style={{
+                lineHeight: '1.6',
+                margin: '5px 0',
+              }}
+            >
+              Infinity Labs R&D
+              <br />
+              <b>Full Stack Developer - Dev core team</b>
+              <br />
+              2024-2025
+              <br />
+              <span
+                style={{
+                  display: 'block',
+                  marginTop: '10px',
+                  marginBottom: '5px',
+                }}
+              >
+                • Part of the core development team which is responsible for
+                architectural decisions, defining company-wide development
+                conventions, and developing the infrastructure of the
+                application, which includes multiple microservices under its
+                responsibility • Developed and maintained a micro-service for
+                guest users invites management system
+              </span>
+              <br />
+              <span>
+                • Developed and maintained a micro-service for guest users
+                invites management system
+              </span>
+              <span>
+                • Created and managed npm packages to be used across the app's
+                services.
               </span>
             </p>
           </div>
