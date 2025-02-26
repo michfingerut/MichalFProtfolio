@@ -69,12 +69,37 @@ function About() {
         >
           <div>
             <h1>Experience</h1>
-            <p
-              style={{
-                lineHeight: '1.6',
-                margin: '5px 0',
-              }}
-            >
+            <p>
+              Infinity Labs R&D
+              <br />
+              <b>Full Stack Developer - Dev core team</b>
+              <br />
+              2024-2025
+              <br />
+              <span
+                style={{
+                  display: 'block',
+                  marginTop: '10px',
+                  marginBottom: '5px',
+                }}
+              >
+                • Part of the core development team which is responsible for
+                architectural decisions, defining company-wide development
+                conventions, and developing the infrastructure of the
+                application, which includes multiple microservices under its
+                responsibility.
+              </span>
+              <span>
+                • Developed and maintained a micro-service for guest users
+                invites management system.
+              </span>
+              <span>
+                • Created and managed npm packages to be used across the app's
+                services.
+              </span>
+            </p>
+            <br />
+            <p>
               Infinity Labs R&D
               <br />
               <b>Full Stack Developer - Dashboard team</b>
@@ -108,45 +133,16 @@ function About() {
                 • Deployed the application to production with CI/CD pipelines.
               </span>
               <span>
-                • Mentored students in a software development bootcamp.
+                • Refactored the backend by independently rewriting the code to
+                extract the core framework.
               </span>
-            </p>
-            <br />
-            <p
-              style={{
-                lineHeight: '1.6',
-                margin: '5px 0',
-              }}
-            >
-              Infinity Labs R&D
-              <br />
-              <b>Full Stack Developer - Dev core team</b>
-              <br />
-              2024-2025
-              <br />
-              <span
-                style={{
-                  display: 'block',
-                  marginTop: '10px',
-                  marginBottom: '5px',
-                }}
-              >
-                • Part of the core development team which is responsible for
-                architectural decisions, defining company-wide development
-                conventions, and developing the infrastructure of the
-                application, which includes multiple microservices under its
-                responsibility • Developed and maintained a micro-service for
-                guest users invites management system
-              </span>
-              <br />
               <span>
-                • Developed and maintained a micro-service for guest users
-                invites management system
-              </span>
-              <br />
-              <span>
-                • Created and managed npm packages to be used across the app's
-                services.
+                • Mentored students in a software development extensive
+                bootcamp, delivering comprehensive instruction in C programming,
+                Java, OOP, Design Patterns, fundamental programming concepts,
+                algorithms, software design, multithreading, and system
+                programming, while focusing on core principles and best
+                practices.
               </span>
             </p>
           </div>
