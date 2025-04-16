@@ -2,7 +2,7 @@
 import { Element } from 'react-scroll';
 
 // Internal modules
-import { ProjectsContainer } from '../../styles/styles';
+import { ProjectsContainer } from '../../styles/projectsStyles';
 import ProjectCard from './ProjectCard';
 import { projects } from './projectsInfo';
 

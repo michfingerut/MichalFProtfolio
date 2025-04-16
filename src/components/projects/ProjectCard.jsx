@@ -4,7 +4,7 @@ import React from 'react';
 // Internal modules
 import ProjectContent from './ProjectContent';
 import ProjectImages from './ProjectImages';
-import { ProjectCardContainer } from '../../styles/styles';
+import { ProjectCardContainer } from '../../styles/projectsStyles';
 
 function ProjectCard({ project }) {
   return (

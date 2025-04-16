@@ -2,8 +2,11 @@
 import React from 'react';
 
 // Internal modules
-import { ProjectTitle, ProjectDescription } from '../../styles/projectsStyles';
-import { ProjectContentContainer } from '../../styles/styles';
+import {
+  ProjectContentContainer,
+  ProjectTitle,
+  ProjectDescription,
+} from '../../styles/projectsStyles';
 import { TechStack, TechItem } from '../../styles/techStackStyles';
 
 function ProjectContent({ project }) {

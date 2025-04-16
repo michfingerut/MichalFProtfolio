@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
+import { borders } from './commonsStyles';
 
 export const ProjectsContainer = styled.div`
   padding: 40px;
@@ -14,13 +15,11 @@ export const ProjectCardContainer = styled.div`
   display: flex;
   align-items: center;
   background-color: ${theme.primaryBackgroundColor};
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  ${borders}
   padding: 20px;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 30px;
-  width: 80%;
 `;
 
 export const ProjectContentContainer = styled.div`
