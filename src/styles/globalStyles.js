@@ -2,6 +2,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+* {
+    transition: background-color ${({ theme }) => theme.transition},
+                color ${({ theme }) => theme.transition},
+                border ${({ theme }) => theme.transition};
+  }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
