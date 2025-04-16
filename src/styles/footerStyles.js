@@ -21,15 +21,6 @@ export const FooterIconContainer = styled.div`
   display: flex;
   gap: 20px;
   margin-bottom: 15px;
-
-  & > a {
-    font-size: 24px;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: ${theme.hoverColor};
-    }
-  }
 `;
 
 export const FooterText = styled.p`
@@ -42,4 +33,27 @@ export const FooterText = styled.p`
 export const FooterLink = styled.a`
   display: inline-block;
   text-decoration: none;
+
+  svg {
+    color: ${theme.secondaryText};
+    font-size: 22px;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  &:hover svg {
+    color: ${theme.primaryText};
+    transform: scale(1.15);
+  }
+
+  /* Override Material UI IconButton styling */
+  .MuiIconButton-root {
+    color: inherit;
+    padding: 8px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
 `;
