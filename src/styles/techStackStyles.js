@@ -17,9 +17,3 @@ export const TechItem = styled.span`
   padding: 5px 10px;
   border-radius: 20px;
 `;
-
-export const TechStackContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-`;

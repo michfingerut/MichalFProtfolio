@@ -4,11 +4,6 @@ import styled, { css, keyframes } from 'styled-components';
 // Internal modules
 import { theme } from './theme';
 
-export const fadeIn = keyframes`
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-`;
-
 export const borders = css`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -24,6 +19,10 @@ export const BaseContainer = styled.div`
     width: 80%;
     text-align: left;
   }
+
+  p {
+    font-size: ${theme.fontSize};
+  }
 `;
 
 export const BaseCardContainer = styled.div`
@@ -31,13 +30,7 @@ export const BaseCardContainer = styled.div`
   gap: 20px;
   padding: 20px;
   margin-bottom: 30px;
-`;
-
-export const SecondaryContainer = styled.div`
-  background-color: ${theme.secondaryBackgroundColor};
-  padding: 20px;
   ${borders}
-  border: 1px solid ${theme.borderColor};
 `;
 
 export const DownloadButton = styled.button`

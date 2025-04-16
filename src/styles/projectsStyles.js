@@ -3,38 +3,28 @@ import styled from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
-import { borders, BaseContainer, BaseCardContainer } from './commonsStyles';
+import { BaseContainer, BaseCardContainer } from './commonsStyles';
 
 export const ProjectsContainer = styled(BaseContainer)`
   background-color: ${theme.primaryBackgroundColor};
 `;
 
 export const ProjectCardContainer = styled(BaseCardContainer)`
-  display: flex;
-  align-items: center;
   background-color: ${theme.secondaryBackgroundColor};
-  ${borders}
   flex-direction: column;
 `;
 
 export const ProjectContentContainer = styled.div`
-  flex: 1;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 `;
 
 export const ProjectTitle = styled.h2`
   color: ${theme.primaryText};
   font-size: 1.5rem;
-  margin-bottom: 10px;
 `;
 
 export const ProjectDescription = styled.p`
   color: ${theme.secondaryText};
-  font-size: ${theme.fontSize};
-  margin-bottom: 15px;
   line-height: 1.6;
 `;
 

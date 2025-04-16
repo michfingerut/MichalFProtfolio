@@ -10,5 +10,4 @@ export const ExpContainer = styled(BaseContainer)`
 export const ExpCardContainer = styled(BaseCardContainer)`
   background-color: ${theme.secondaryBackgroundColor};
   line-height: 1.6;
-  font-size: ${theme.fontSize};
 `;

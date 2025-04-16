@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Internal modules
 import { theme } from './theme';
 import backgroundImage from '../assets/background.jpeg';
+import { borders } from './commonsStyles';
 
 export const HeaderContainer = styled.div`
   display: grid;
@@ -21,4 +22,11 @@ export const HeaderContainer = styled.div`
   p {
     font-size: 1.1em;
   }
+`;
+
+export const SecondaryContainer = styled.div`
+  background-color: ${theme.secondaryBackgroundColor};
+  padding: 20px;
+  ${borders}
+  border: 1px solid ${theme.borderColor};
 `;

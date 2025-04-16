@@ -5,6 +5,7 @@ import React from 'react';
 import { ImageContainer } from '../../styles/commonsStyles';
 import { ProjectImage } from '../../styles/projectsStyles';
 
+//TODO: consider do it in a carosele
 function ProjectImages({ images }) {
   return (
     <ImageContainer>

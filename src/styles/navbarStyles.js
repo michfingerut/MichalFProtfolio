@@ -18,10 +18,7 @@ export const NavStyle = styled.nav`
   background-color: ${theme.secondaryBackgroundColor};
   padding: 15px 30px;
   position: sticky;
-  top: 0;
   z-index: 1000;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 
   @media (max-width: 768px) {
     flex-direction: column;

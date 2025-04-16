@@ -16,6 +16,5 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  justify-content: center;
   background-color: ${theme.secondaryBackgroundColor};
 `;

@@ -1,6 +1,5 @@
 // Internal modules
-import { HeaderContainer } from '../styles/headerStyles';
-import { SecondaryContainer } from '../styles/commonsStyles';
+import { HeaderContainer, SecondaryContainer } from '../styles/headerStyles';
 
 function Header() {
   return (
