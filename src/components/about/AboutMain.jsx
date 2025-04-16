@@ -5,24 +5,13 @@ import { Element } from 'react-scroll';
 import ExperienceSection from './ExperienceSection';
 import EducationSection from './EducationSection';
 import { AboutContainer } from '../../styles/aboutStyles';
-
-import {
-  techStackExp,
-  techStackCourse,
-  infinityDevCoreExperience,
-  infinityDashboardExperience,
-  educationItems,
-} from './aboutInfo';
+import { techStackCourse, infinityExp, educationItems } from './aboutInfo';
 
 function About() {
   return (
     <AboutContainer>
       <Element name="experience-section">
-        <ExperienceSection
-          devCoreExperience={infinityDevCoreExperience}
-          dashboardExperience={infinityDashboardExperience}
-          techStack={techStackExp}
-        />
+        <ExperienceSection experience={infinityExp} />
       </Element>
 
       <Element name="education-section">

@@ -6,11 +6,7 @@ import { AboutSecondaryContainer } from '../../styles/aboutStyles';
 import ExperienceItem from './ExperienceItem';
 import { TechStack, TechItem } from '../../styles/techStackStyles';
 
-function ExperienceSection({
-  devCoreExperience,
-  dashboardExperience,
-  techStack,
-}) {
+function ExperienceSection({ experience }) {
   return (
     <AboutSecondaryContainer
       style={{
@@ -21,16 +17,18 @@ function ExperienceSection({
     >
       <div>
         <h1>Experience</h1>
-        <ExperienceItem {...devCoreExperience} />
-        <br />
-        <ExperienceItem {...dashboardExperience} />
-      </div>
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <TechStack>
-          {techStack.map((tech, index) => (
-            <TechItem key={index}>{tech}</TechItem>
-          ))}
-        </TechStack>
+        {experience.map((exp, index) => {
+          return (
+            <div key={index}>
+              <ExperienceItem {...exp} />
+              <TechStack>
+                {exp.techStack.map((tech, index) => (
+                  <TechItem key={index + tech}>{tech}</TechItem>
+                ))}
+              </TechStack>
+            </div>
+          );
+        })}
       </div>
     </AboutSecondaryContainer>
   );

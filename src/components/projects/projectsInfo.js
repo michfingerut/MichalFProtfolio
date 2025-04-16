@@ -8,7 +8,7 @@ export const projects = [
     description:
       'KeeperNotes is a web app for managing personal notes, groups, and members. It enables users to create, edit, and delete notes, manage group memberships, and collaborate seamlessly. ',
     techStack: [
-      'React',
+      'React.js',
       'Node.js',
       'JavaScript',
       'Express',
