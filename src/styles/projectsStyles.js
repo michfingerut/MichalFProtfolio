@@ -3,23 +3,18 @@ import styled from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
-import { borders } from './commonsStyles';
+import { borders, BaseContainer, BaseCardContainer } from './commonsStyles';
 
-export const ProjectsContainer = styled.div`
-  padding: 40px;
-  min-height: ${theme.pageHeight};
-  background-color: ${theme.secondaryBackgroundColor};
+export const ProjectsContainer = styled(BaseContainer)`
+  background-color: ${theme.primaryBackgroundColor};
 `;
 
-export const ProjectCardContainer = styled.div`
+export const ProjectCardContainer = styled(BaseCardContainer)`
   display: flex;
   align-items: center;
-  background-color: ${theme.primaryBackgroundColor};
+  background-color: ${theme.secondaryBackgroundColor};
   ${borders}
-  padding: 20px;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 30px;
 `;
 
 export const ProjectContentContainer = styled.div`

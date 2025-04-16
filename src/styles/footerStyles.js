@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${theme.primaryBackgroundColor};
   padding-top: 20px;
   position: relative;
   bottom: 0;

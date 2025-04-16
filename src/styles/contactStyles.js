@@ -17,5 +17,5 @@ export const ContactContainer = styled.div`
   align-items: center;
   padding: 40px;
   justify-content: center;
-  background-color: ${theme.primaryBackgroundColor};
+  background-color: ${theme.secondaryBackgroundColor};
 `;

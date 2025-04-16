@@ -18,7 +18,19 @@ export const BaseContainer = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: ${theme.primaryBackgroundColor};
+  padding: 40px;
+
+  h1 {
+    width: 80%;
+    text-align: left;
+  }
+`;
+
+export const BaseCardContainer = styled.div`
+  width: 80%;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
 `;
 
 export const SecondaryContainer = styled.div`
