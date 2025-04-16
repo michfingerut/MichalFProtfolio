@@ -13,7 +13,7 @@ export const EducationCardContainer = styled(BaseCardContainer)`
 
   h2 {
     color: ${({ theme }) => theme.primaryText};
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 `;
 
