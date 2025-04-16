@@ -1,0 +1,35 @@
+export const educationItems = [
+  {
+    degree: 'Software Development Extensive Bootcamp',
+    institution: 'Infinity Labs R&D',
+    period: '2022',
+    techStack: [
+      'C',
+      'Java',
+      'MySQL',
+      'Object-Oriented Programming',
+      'Data Structures',
+      'Design Patterns',
+      'Procedural Programming',
+      'Multithreaded Development',
+      'System programming',
+      'Networking',
+    ],
+  },
+  {
+    degree: 'BSC, Optometry (Cum Laude)',
+    institution: 'Bar Ilan University',
+    period: '2017-2021',
+    techStack: [
+      'Refraction & Vision Testing',
+      'Ocular Disease Recognition',
+      'Binocular Vision Assessment',
+      'Contact Lens Fitting',
+      'Patient Assessment & Case Analysis',
+      'Evidence-Based Practice',
+      'Research & Scientific Writing',
+      'Record-Keeping & Documentation',
+      'Ethics in Healthcare',
+    ],
+  },
+];

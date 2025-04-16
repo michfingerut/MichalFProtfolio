@@ -27,17 +27,6 @@ export const techStackExp = [
   'Linux-based environment',
 ];
 
-export const techStackCourse = [
-  'C',
-  'Java',
-  'MySQL',
-  'Object-Oriented Programming',
-  'Data Structures',
-  'Design Patterns',
-  'Procedural Programming',
-  'Multithreaded Development',
-];
-
 export const infinityExp = [
   {
     title: 'Full Stack Developer - Dev core team',
@@ -108,18 +97,5 @@ export const infinityExp = [
       'Web Sockets',
       'Linux-based environment',
     ],
-  },
-];
-
-export const educationItems = [
-  {
-    degree: 'Software Development Extensive Bootcamp',
-    institution: 'Infinity Labs R&D',
-    period: '2022',
-  },
-  {
-    degree: 'BSC, Optometry (Cum Laude)',
-    institution: 'Bar Ilan University',
-    period: '2017-2021',
   },
 ];

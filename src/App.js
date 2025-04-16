@@ -1,5 +1,5 @@
 //Internal modules
-import AboutMain from './components/about/AboutMain';
+import Experience from './components/experience/Experience';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Projects from './components/projects/Projects';
 import { GlobalStyle } from './styles/globalStyles';
 import GoUpButton from './components/GoUpButton';
+import Education from './components/education/Education';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <GlobalStyle />
       <Navbar />
       <Header />
-      <AboutMain />
+      <Experience />
+      <Education />
       <Projects />
       <Contact />
       <Footer />
