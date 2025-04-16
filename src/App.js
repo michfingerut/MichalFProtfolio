@@ -1,6 +1,7 @@
 //Internal modules
 import AboutMain from './components/about/AboutMain';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Projects from './components/projects/Projects';
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
+      <Navbar />
       <Header />
       <AboutMain />
       <Projects />

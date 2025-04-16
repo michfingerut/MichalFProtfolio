@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { theme } from './theme';
 
 export const NavContainer = styled.div`
+  //position:fixed; //if i want it to apear allways
   position: absolute;
   top: 0;
   left: 0;

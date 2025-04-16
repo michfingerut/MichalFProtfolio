@@ -19,6 +19,6 @@ export const HeaderContainer = styled.div`
     font-size: 2.5em;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 `;

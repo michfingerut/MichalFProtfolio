@@ -53,15 +53,3 @@ export const AboutSecondaryContainer = styled(SecondaryContainer)`
     display: block;
   }
 `;
-
-// export const SelfImage = styled.img`
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   object-fit: cover;
-//   transition: transform 0.3s ease;
-
-//   &:hover {
-//     transform: scale(1.1);
-//   }
-// `;

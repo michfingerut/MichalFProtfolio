@@ -2,7 +2,6 @@
 import { Element } from 'react-scroll';
 
 // Internal modules
-import AboutIntro from './AboutIntro';
 import ExperienceSection from './ExperienceSection';
 import EducationSection from './EducationSection';
 import { AboutContainer } from '../../styles/aboutStyles';
@@ -18,15 +17,15 @@ import {
 function About() {
   return (
     <AboutContainer>
-      <Element name="about-section">
-        <AboutIntro />
-
+      <Element name="experience-section">
         <ExperienceSection
           devCoreExperience={infinityDevCoreExperience}
           dashboardExperience={infinityDashboardExperience}
           techStack={techStackExp}
         />
+      </Element>
 
+      <Element name="education-section">
         <EducationSection
           educationItems={educationItems}
           techStack={techStackCourse}
@@ -35,5 +34,4 @@ function About() {
     </AboutContainer>
   );
 }
-
 export default About;
