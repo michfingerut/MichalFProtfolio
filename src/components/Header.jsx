@@ -1,8 +1,13 @@
+// External modules
 import { Link } from 'react-scroll';
-import { HeaderContainer, NavStyle, NavContainer } from '../styles/styles';
-import { theme } from '../styles/theme';
-import { SecondaryContainer, LinkStyle } from '../styles/commonsStyles';
 
+// Internal modules
+import { NavStyle, NavContainer } from '../styles/navbarStyles';
+import { HeaderContainer } from '../styles/headerStyles';
+import { theme } from '../styles/theme';
+import { SecondaryContainer } from '../styles/commonsStyles';
+
+//TODO: split to sub components?
 const linkStyle = {
   color: theme.primaryText,
   margin: '0 25px',
