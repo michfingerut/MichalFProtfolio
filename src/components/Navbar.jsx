@@ -1,11 +1,16 @@
-//External modules
+// External modules
 import { Link } from 'react-scroll';
 import { useContext } from 'react';
 import { FaToggleOff } from 'react-icons/fa6';
 import { FaToggleOn } from 'react-icons/fa6';
 
-//Internal modules
-import { NavStyle, NavContainer } from '../styles/navbarStyles';
+// Internal modules
+import {
+  NavStyle,
+  NavContainer,
+  ToggleButton,
+  Tooltip,
+} from '../styles/navbarStyles';
 import { theme } from '../styles/theme';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -33,7 +38,7 @@ const onOut = (e) => {
 };
 
 function ToggleMode(isDark) {
-  return isDark ? <FaToggleOn size={24} /> : <FaToggleOff size={24} />;
+  return isDark ? <FaToggleOn size={40} /> : <FaToggleOff size={40} />;
 }
 
 function Navbar() {
@@ -78,7 +83,10 @@ function Navbar() {
         >
           Contact
         </Link>
-        <button onClick={toggleTheme}>{ToggleMode(isDark)}</button>
+        <ToggleButton onClick={toggleTheme}>
+          {ToggleMode(isDark)}
+          <Tooltip>Switch Mode</Tooltip>
+        </ToggleButton>
       </NavStyle>
     </NavContainer>
   );
