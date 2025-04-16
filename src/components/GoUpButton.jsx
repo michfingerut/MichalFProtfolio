@@ -1,6 +1,6 @@
 // External modules
 import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import { MdOutlineKeyboardDoubleArrowUp } from 'react-icons/md';
 
 // Internal modules
 import { GoUpButtonStyle } from '../styles/commonsStyles';
@@ -27,7 +27,7 @@ const GoUpButton = () => {
 
   return (
     <GoUpButtonStyle onClick={scrollToTop} $isVisible={isVisible}>
-      <FaArrowUp size={24} />
+      <MdOutlineKeyboardDoubleArrowUp size={40} />
     </GoUpButtonStyle>
   );
 };

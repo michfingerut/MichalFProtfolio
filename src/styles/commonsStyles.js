@@ -62,7 +62,7 @@ export const GoUpButtonStyle = styled.button`
   bottom: 20px;
   right: 20px;
   background-color: transparent;
-  color: black;
+  color: ${theme.secondaryText};
   border: none;
   padding: 12px 16px;
   cursor: pointer;
@@ -71,4 +71,9 @@ export const GoUpButtonStyle = styled.button`
     background-color 0.3s ease,
     transform 0.3s ease;
   display: ${({ $isVisible }) => ($isVisible ? 'block' : 'none')};
+
+  &:hover {
+    transform: scale(1.5);
+    color: ${theme.primaryText};
+  }
 `;
