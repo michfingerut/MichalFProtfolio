@@ -1,4 +1,5 @@
-import About from './components/About';
+//Internal modules
+import AboutMain from './components/about/AboutMain';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -11,7 +12,7 @@ function App() {
     <div>
       <GlobalStyle />
       <Header />
-      <About />
+      <AboutMain />
       <Projects />
       <Contact />
       <Footer />

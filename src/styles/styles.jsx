@@ -1,22 +1,7 @@
 import styled from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
-import { Link } from 'react-scroll';
 import { theme } from './theme';
 import { BaseContainer, borders } from './commonsStyles';
-
-const AboutContainer = styled(BaseContainer)`
-  background-color: ${theme.primaryBackgroundColor};
-  min-height: ${theme.pageHeight};
-  padding: 5em 0;
-
-  @media (max-width: 1024px) {
-    height: auto;
-  }
-
-  @media (max-width: 768px) {
-    padding: 10px;
-  }
-`;
 
 const HeaderContainer = styled.div`
   display: grid;
@@ -33,43 +18,6 @@ const HeaderContainer = styled.div`
   }
   p {
     font-size: 1.5em;
-  }
-`;
-
-const AboutSecondaryContainer = styled(SecondaryContainer)`
-  width: 60%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 50px;
-  justify-items: center;
-  line-height: 1.6;
-
-  align-items: center;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-
-  span {
-    display: block;
-  }
-
-  img {
-    width: 200px;
-    border-radius: 38px;
-    @media (max-width: 768px) {
-      width: 150px;
-    }
-
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
   }
 `;
 
@@ -138,20 +86,6 @@ const ProjectDescription = styled.p`
   line-height: 1.6;
 `;
 
-const TechStack = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-`;
-
-const TechItem = styled.span`
-  background-color: ${theme.buttonColor};
-  color: white;
-  font-size: 0.9rem;
-  padding: 5px 10px;
-  border-radius: 20px;
-`;
-
 const ProjectImage = styled.img`
   width: 50%;
   height: 70%;
@@ -174,9 +108,7 @@ const ProjectImage = styled.img`
 `;
 
 export {
-  AboutContainer,
   HeaderContainer,
-  AboutSecondaryContainer,
   NavStyle,
   NavContainer,
   ProjectsContainer,
@@ -185,6 +117,4 @@ export {
   ProjectContent,
   ProjectTitle,
   ProjectDescription,
-  TechStack,
-  TechItem,
 };
