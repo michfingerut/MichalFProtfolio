@@ -13,7 +13,7 @@ export const TechStack = styled.div`
 export const TechItem = styled.span`
   background-color: ${theme.buttonColor};
   color: white;
-  font-size: 0.9rem;
+  font-size: ${theme.fontSize};
   padding: 5px 10px;
   border-radius: 20px;
 `;

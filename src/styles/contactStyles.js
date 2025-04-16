@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { theme } from './theme';
 
 export const ContactInfo = styled.p`
-  font-size: 18px;
+  font-size: ${theme.fontSize};
   color: ${theme.secondaryText};
   text-align: center;
   margin-bottom: 20px;

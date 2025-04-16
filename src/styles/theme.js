@@ -9,9 +9,9 @@ export const theme = {
   hoverColor: '#6366f1', // Lighter indigo for hover states
   borderColor: '#2d3748', // Subtle border
 
-  // Layout
   pageHeight: '100vh',
   borderRadius: '6px', // Consistent rounded corners
+  fontSize: '1.1rem',
 
   cardShadow: '0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2)',
 

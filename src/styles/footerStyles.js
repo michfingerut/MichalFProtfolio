@@ -36,7 +36,7 @@ export const FooterLink = styled.a`
 
   svg {
     color: ${theme.secondaryText};
-    font-size: 22px;
+    font-size: 30px;
     transition:
       color 0.3s ease,
       transform 0.3s ease;

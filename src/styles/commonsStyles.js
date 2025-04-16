@@ -1,8 +1,13 @@
 // External modules
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
+
+export const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+`;
 
 export const borders = css`
   border-radius: 8px;

@@ -57,7 +57,6 @@ export const infinityDashboardExperience = {
     'Oversaw the entire development lifecycle of an educational Saas web application (SOA based) for students. Responsibilities included designing and implementing REST APIs, adding new features, and performing ongoing maintenance to improve functionality and user experience.',
     'Acted as the main software developer in the team, defining workflows, operational procedures, and guidelines for development, and served as the primary point of contact for support and technical questions from team members.',
     'Optimized system performance and improved response times by 80%.',
-    'Deployed the application to production with CI/CD pipelines.',
     'Refactored the backend by independently rewriting the code to extract the core framework.',
     'Mentored students in a software development extensive bootcamp, delivering comprehensive instruction in C programming, Java, OOP, Design Patterns, fundamental programming concepts, algorithms, software design, multithreading, and system programming, while focusing on core principles and best practices.',
   ],

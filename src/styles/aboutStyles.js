@@ -25,6 +25,7 @@ export const AboutSecondaryContainer = styled(SecondaryContainer)`
   gap: 50px;
   justify-items: center;
   line-height: 1.6;
+  font-size: ${theme.fontSize};
 
   align-items: center;
   @media (max-width: 1024px) {

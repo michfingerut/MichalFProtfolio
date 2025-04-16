@@ -38,7 +38,7 @@ export const ProjectTitle = styled.h2`
 
 export const ProjectDescription = styled.p`
   color: ${theme.secondaryText};
-  font-size: 1.1rem;
+  font-size: ${theme.fontSize};
   margin-bottom: 15px;
   line-height: 1.6;
 `;
