@@ -29,6 +29,7 @@ function Projects() {
         'styled components',
         'Jest',
         'PostgreSQL',
+        'Docker',
       ],
     },
     {
@@ -38,10 +39,10 @@ function Projects() {
       techStack: [
         'Node.js',
         'TypeScript',
-        'NestJS',
+        'Nest.js',
         'Express',
         'Object oriented programming',
-        'Jesr',
+        'Jest',
         'Docker',
       ],
     },

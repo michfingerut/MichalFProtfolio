@@ -20,7 +20,6 @@ function About() {
     'Vue.js',
     'html',
     'css',
-    'Element Plus',
     'axios',
     'Jest',
     'MongoDB',
@@ -31,7 +30,10 @@ function About() {
     'AWS',
     'Service oriented architecture SOA',
     'MicroServices architecture',
-    'REST APIs',
+    'Event driven architecture',
+    'Test driven development',
+    'REST API',
+    'Web Sockets',
     'Linux-based environment',
   ];
 
