@@ -1,14 +1,11 @@
 // External modules
 import styled from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${theme.primaryBackgroundColor};
+  background-color: ${({ theme }) => theme.primaryBackgroundColor};
   padding-top: 20px;
   width: 100%;
 `;
@@ -19,7 +16,7 @@ export const FooterIconContainer = styled.div`
 `;
 
 export const FooterText = styled.p`
-  color: ${theme.secondaryText};
+  color: ${({ theme }) => theme.secondaryText};
   font-size: 14px;
   text-align: center;
 `;
@@ -29,7 +26,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
 
   svg {
-    color: ${theme.secondaryText};
+    color: ${({ theme }) => theme.secondaryText};
     font-size: 30px;
     transition:
       color 0.3s ease,
@@ -37,7 +34,7 @@ export const FooterLink = styled.a`
   }
 
   &:hover svg {
-    color: ${theme.primaryText};
+    color: ${({ theme }) => theme.primaryText};
     transform: scale(1.15);
   }
 

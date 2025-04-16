@@ -2,19 +2,23 @@
 import styled from 'styled-components';
 
 // Internal modules
-import { theme } from './theme';
-import backgroundImage from '../assets/background.jpeg';
+import darkBackgroundImage from '../assets/background.jpeg';
+import lightBackgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
 import { borders } from './commonsStyles';
 
 export const HeaderContainer = styled.div`
   display: grid;
   place-items: center;
-  height: ${theme.pageHeight};
+  height: ${({ theme }) => theme.pageHeight};
   text-align: center;
-  background-image: url(${backgroundImage});
+  background-image: url(${({ theme }) =>
+    theme.isDark
+      ? darkBackgroundImage
+      : lightBackgroundImage}); /* Conditional background */
+
   background-size: cover;
   background-position: center;
-  color: ${theme.primaryText};
+  color: ${({ theme }) => theme.primaryText};
 
   h1 {
     font-size: 2.5em;
@@ -25,8 +29,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const SecondaryContainer = styled.div`
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
   padding: 20px;
   ${borders}
-  border: 1px solid ${theme.borderColor};
+  border: 1px solid ${({ theme }) => theme.borderColor};
 `;

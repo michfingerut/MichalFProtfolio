@@ -1,12 +1,9 @@
 // External modules
 import styled from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const ContactInfo = styled.p`
-  font-size: ${theme.fontSize};
-  color: ${theme.secondaryText};
+  font-size: ${({ theme }) => theme.fontSize};
+  color: ${({ theme }) => theme.secondaryText};
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -16,5 +13,5 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
 `;

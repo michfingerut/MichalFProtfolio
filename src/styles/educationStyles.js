@@ -2,18 +2,17 @@
 import styled from 'styled-components';
 
 // Internal modules
-import { theme } from './theme';
 import { BaseContainer, BaseCardContainer } from './commonsStyles';
 
 export const EducationContainer = styled(BaseContainer)`
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
 `;
 
 export const EducationCardContainer = styled(BaseCardContainer)`
-  background-color: ${theme.primaryBackgroundColor};
+  background-color: ${({ theme }) => theme.primaryBackgroundColor};
 
   h2 {
-    color: ${theme.primaryText};
+    color: ${({ theme }) => theme.primaryText};
     font-size: 1.7rem;
   }
 `;

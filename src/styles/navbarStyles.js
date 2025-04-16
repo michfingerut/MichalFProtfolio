@@ -1,9 +1,6 @@
 // External modules
 import styled from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const NavContainer = styled.div`
   //position:fixed; //if i want it to apear allways
   position: absolute;
@@ -15,11 +12,11 @@ export const NavContainer = styled.div`
 export const NavStyle = styled.nav`
   display: flex;
   align-items: center;
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
   padding: 15px 30px;
   position: sticky;
   z-index: 1000;
-
+  color: ${({ theme }) => theme.primaryText};
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;

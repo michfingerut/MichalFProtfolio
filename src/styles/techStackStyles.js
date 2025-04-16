@@ -1,9 +1,6 @@
 // External modules
 import styled from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const TechStack = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -11,9 +8,9 @@ export const TechStack = styled.div`
 `;
 
 export const TechItem = styled.span`
-  background-color: ${theme.buttonColor};
+  background-color: ${({ theme }) => theme.buttonColor};
   color: white;
-  font-size: ${theme.fontSize};
+  font-size: ${({ theme }) => theme.fontSize};
   padding: 5px 10px;
   border-radius: 20px;
 `;

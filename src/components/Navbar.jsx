@@ -1,9 +1,13 @@
 //External modules
 import { Link } from 'react-scroll';
+import { useContext } from 'react';
+import { FaToggleOff } from 'react-icons/fa6';
+import { FaToggleOn } from 'react-icons/fa6';
 
 //Internal modules
 import { NavStyle, NavContainer } from '../styles/navbarStyles';
 import { theme } from '../styles/theme';
+import { ThemeContext } from '../context/ThemeContext';
 
 const linkStyle = {
   color: theme.primaryText,
@@ -28,7 +32,13 @@ const onOut = (e) => {
   e.target.style.transform = 'scale(1)';
 };
 
+function ToggleMode(isDark) {
+  return isDark ? <FaToggleOn size={24} /> : <FaToggleOff size={24} />;
+}
+
 function Navbar() {
+  const { theme, toggleTheme, isDark } = useContext(ThemeContext);
+
   return (
     <NavContainer>
       <NavStyle>
@@ -68,6 +78,7 @@ function Navbar() {
         >
           Contact
         </Link>
+        <button onClick={toggleTheme}>{ToggleMode(isDark)}</button>
       </NavStyle>
     </NavContainer>
   );

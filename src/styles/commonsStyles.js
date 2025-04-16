@@ -1,9 +1,6 @@
 // External modules
 import styled, { css } from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const borders = css`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -21,7 +18,7 @@ export const BaseContainer = styled.div`
   }
 
   p {
-    font-size: ${theme.fontSize};
+    font-size: ${({ theme }) => theme.fontSize};
   }
 `;
 
@@ -34,7 +31,7 @@ export const BaseCardContainer = styled.div`
 `;
 
 export const DownloadButton = styled.button`
-  background-color: ${theme.buttonColor};
+  background-color: ${({ theme }) => theme.buttonColor};
   color: white;
   border: none;
   padding: 12px 16px;
@@ -67,7 +64,7 @@ export const GoUpButtonStyle = styled.button`
   bottom: 20px;
   right: 20px;
   background-color: transparent;
-  color: ${theme.secondaryText};
+  color: ${({ theme }) => theme.secondaryText};
   border: none;
   padding: 12px 16px;
   cursor: pointer;
@@ -79,6 +76,6 @@ export const GoUpButtonStyle = styled.button`
 
   &:hover {
     transform: scale(1.5);
-    color: ${theme.primaryText};
+    color: ${({ theme }) => theme.primaryText};
   }
 `;

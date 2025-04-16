@@ -1,9 +1,6 @@
 // External modules
 import { createGlobalStyle } from 'styled-components';
 
-// Internal modules
-import { theme } from './theme';
-
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -13,14 +10,14 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 
-    background-color: ${theme.secondaryBackgroundColor};
+    background-color: ${({ theme }) => theme.secondaryBackgroundColor};
   }
 
   p, ul, li {
-    color: ${theme.secondaryText};
+    color: ${({ theme }) => theme.secondaryText};
   }
 
   h1 {
-    color: ${theme.primaryText};
+    color: ${({ theme }) => theme.primaryText};
   }
 `;

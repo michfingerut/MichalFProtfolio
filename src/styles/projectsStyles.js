@@ -2,15 +2,14 @@
 import styled from 'styled-components';
 
 // Internal modules
-import { theme } from './theme';
 import { BaseContainer, BaseCardContainer } from './commonsStyles';
 
 export const ProjectsContainer = styled(BaseContainer)`
-  background-color: ${theme.primaryBackgroundColor};
+  background-color: ${({ theme }) => theme.primaryBackgroundColor};
 `;
 
 export const ProjectCardContainer = styled(BaseCardContainer)`
-  background-color: ${theme.secondaryBackgroundColor};
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
   flex-direction: column;
 `;
 
@@ -19,12 +18,12 @@ export const ProjectContentContainer = styled.div`
 `;
 
 export const ProjectTitle = styled.h2`
-  color: ${theme.primaryText};
+  color: ${({ theme }) => theme.primaryText};
   font-size: 1.5rem;
 `;
 
 export const ProjectDescription = styled.p`
-  color: ${theme.secondaryText};
+  color: ${({ theme }) => theme.secondaryText};
   line-height: 1.6;
 `;
 
