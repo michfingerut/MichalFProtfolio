@@ -1,4 +1,4 @@
-import { ContactInfo, ContactContainer } from '../styles/styles';
+import { ContactInfo, ContactContainer } from '../styles/contactStyles';
 import { DownloadButton } from '../styles/commonsStyles';
 
 function ContactPage() {
