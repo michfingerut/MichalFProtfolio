@@ -1,4 +1,3 @@
-// External modules
 import styled from 'styled-components';
 
 export const NavContainer = styled.div`
@@ -19,7 +18,6 @@ export const NavStyle = styled.nav`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-start;
   }
 `;
 
@@ -28,8 +26,6 @@ export const ToggleButton = styled.button`
   border: none;
   color: ${({ theme }) => theme.primaryText};
   cursor: pointer;
-  margin-left: auto;
-  padding: 0;
   font-size: 24px;
   transition: color 0.3s ease;
   display: flex;
@@ -64,5 +60,45 @@ export const Tooltip = styled.div`
     transition:
       opacity 0.3s ease,
       visibility 0s;
+  }
+`;
+
+export const NavLinksDesktop = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-left: auto;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavLinksMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: ${({ theme }) => theme.secondaryBackgroundColor};
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  ${ToggleButton} {
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+`;
+
+export const MobileToggle = styled.button`
+  background: none;
+  border: none;
+  color: ${({ theme }) => theme.primaryText};
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  z-index: 1100;
+
+  @media (min-width: 769px) {
+    display: none;
   }
 `;

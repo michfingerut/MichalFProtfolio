@@ -1,8 +1,7 @@
 // External modules
 import { Link } from 'react-scroll';
-import { useContext } from 'react';
-import { FaToggleOff } from 'react-icons/fa6';
-import { FaToggleOn } from 'react-icons/fa6';
+import { useContext, useState } from 'react';
+import { FaToggleOff, FaToggleOn, FaBars, FaXmark } from 'react-icons/fa6';
 
 // Internal modules
 import {
@@ -10,11 +9,17 @@ import {
   NavContainer,
   ToggleButton,
   Tooltip,
+  MobileToggle,
+  NavLinksDesktop,
+  NavLinksMobile,
 } from '../styles/navbarStyles';
 import { ThemeContext } from '../context/ThemeContext';
 
 function Navbar() {
   const { theme, toggleTheme, isDark } = useContext(ThemeContext);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const linkStyle = {
     color: theme.primaryText,
@@ -46,47 +51,102 @@ function Navbar() {
   return (
     <NavContainer>
       <NavStyle>
-        <Link
-          to="experience-section"
-          smooth={true}
-          style={linkStyle}
-          onMouseOver={onOver}
-          onMouseOut={onOut}
-        >
-          Experience
-        </Link>
-        <Link
-          to="education-section"
-          smooth={true}
-          style={linkStyle}
-          onMouseOver={onOver}
-          onMouseOut={onOut}
-        >
-          Education
-        </Link>
-        <Link
-          to="projects-section"
-          smooth={true}
-          style={linkStyle}
-          onMouseOver={onOver}
-          onMouseOut={onOut}
-        >
-          Projects
-        </Link>
-        <Link
-          to="contact-section"
-          smooth={true}
-          style={linkStyle}
-          onMouseOver={onOver}
-          onMouseOut={onOut}
-        >
-          Contact
-        </Link>
-        <ToggleButton onClick={toggleTheme}>
-          {ToggleMode(isDark)}
-          <Tooltip>Switch Mode</Tooltip>
-        </ToggleButton>
+        <MobileToggle onClick={toggleMenu}>
+          {isMenuOpen ? <FaXmark size={30} /> : <FaBars size={30} />}
+        </MobileToggle>
+
+        <NavLinksDesktop>
+          <Link
+            to="experience-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+          >
+            Experience
+          </Link>
+          <Link
+            to="education-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+          >
+            Education
+          </Link>
+          <Link
+            to="projects-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+          >
+            Contact
+          </Link>
+          <ToggleButton onClick={toggleTheme}>
+            {ToggleMode(isDark)}
+            <Tooltip>Switch Mode</Tooltip>
+          </ToggleButton>
+        </NavLinksDesktop>
       </NavStyle>
+
+      {isMenuOpen && (
+        <NavLinksMobile>
+          <Link
+            to="experience-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Experience
+          </Link>
+          <Link
+            to="education-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Education
+          </Link>
+          <Link
+            to="projects-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact-section"
+            smooth={true}
+            style={linkStyle}
+            onMouseOver={onOver}
+            onMouseOut={onOut}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </Link>
+          <ToggleButton onClick={toggleTheme}>
+            {ToggleMode(isDark)}
+            <Tooltip>Switch Mode</Tooltip>
+          </ToggleButton>
+        </NavLinksMobile>
+      )}
     </NavContainer>
   );
 }
