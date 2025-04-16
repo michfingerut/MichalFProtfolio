@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/MichalFProtfolio/static/js/main.3536df25.js",
+    "main.js": "/MichalFProtfolio/static/js/main.786e9310.js",
     "static/media/laptop-with-notepad-beige-background.jpg": "/MichalFProtfolio/static/media/laptop-with-notepad-beige-background.9dc819409f51dc04baa4.jpg",
     "static/media/personal_pic.jpeg": "/MichalFProtfolio/static/media/personal_pic.aaa2e3ab5dd70e04b527.jpeg",
     "static/media/kn_edit.png": "/MichalFProtfolio/static/media/kn_edit.74825fd24fbbcbe29128.png",
     "static/media/kn_group_page.png": "/MichalFProtfolio/static/media/kn_group_page.7f7a4bbbf58a1fecec7c.png",
     "index.html": "/MichalFProtfolio/index.html",
-    "main.3536df25.js.map": "/MichalFProtfolio/static/js/main.3536df25.js.map"
+    "main.786e9310.js.map": "/MichalFProtfolio/static/js/main.786e9310.js.map"
   },
   "entrypoints": [
-    "static/js/main.3536df25.js"
+    "static/js/main.786e9310.js"
   ]
 }
