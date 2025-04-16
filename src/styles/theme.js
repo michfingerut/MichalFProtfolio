@@ -26,7 +26,6 @@ export const darkThemeValues = {
   pageHeight: '100vh',
   isDark: true,
   transition: '0.25s ease',
-  pageHeight: '100vh',
   borderRadius: '6px',
   fontSize: '1.1rem',
 };
@@ -40,7 +39,6 @@ export const lightThemeValues = {
   hoverColor: '#f1c40f',
   borderColor: '#e0e0e0',
   cardShadow: '0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06)',
-  pageHeight: '100vh',
   isDark: false,
   transition: '0.25s ease',
   pageHeight: '100vh',
