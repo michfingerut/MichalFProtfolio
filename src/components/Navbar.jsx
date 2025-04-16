@@ -11,38 +11,37 @@ import {
   ToggleButton,
   Tooltip,
 } from '../styles/navbarStyles';
-import { theme } from '../styles/theme';
 import { ThemeContext } from '../context/ThemeContext';
-
-const linkStyle = {
-  color: theme.primaryText,
-  margin: '0 25px',
-  fontSize: '18px',
-  fontWeight: '600',
-  textTransform: 'uppercase',
-  letterSpacing: '2px',
-  position: 'relative',
-  padding: '5px 0',
-  cursor: 'pointer',
-  transition: 'color 0.3s ease, transform 0.3s ease',
-};
-
-const onOver = (e) => {
-  e.target.style.color = theme.hoverColor;
-  e.target.style.transform = 'scale(1.1)';
-};
-
-const onOut = (e) => {
-  e.target.style.color = theme.primaryText;
-  e.target.style.transform = 'scale(1)';
-};
-
-function ToggleMode(isDark) {
-  return isDark ? <FaToggleOn size={40} /> : <FaToggleOff size={40} />;
-}
 
 function Navbar() {
   const { theme, toggleTheme, isDark } = useContext(ThemeContext);
+
+  const linkStyle = {
+    color: theme.primaryText,
+    margin: '0 25px',
+    fontSize: '18px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: '2px',
+    position: 'relative',
+    padding: '5px 0',
+    cursor: 'pointer',
+    transition: 'color 0.3s ease, transform 0.3s ease',
+  };
+
+  const onOver = (e) => {
+    e.target.style.color = theme.hoverColor;
+    e.target.style.transform = 'scale(1.1)';
+  };
+
+  const onOut = (e) => {
+    e.target.style.color = theme.primaryText;
+    e.target.style.transform = 'scale(1)';
+  };
+
+  function ToggleMode(isDark) {
+    return isDark ? <FaToggleOn size={40} /> : <FaToggleOff size={40} />;
+  }
 
   return (
     <NavContainer>
