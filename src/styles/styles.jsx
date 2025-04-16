@@ -1,52 +1,12 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
+import styled from 'styled-components';
 import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
 import { Link } from 'react-scroll';
-
-const primaryBackgroundColor = '#f5f5f5';
-const secondaryBackgroundColor = 'rgba(255, 255, 255, 0.8)';
-const primaryText = '#333333';
-const secondaryText = '#777777';
-const buttonColor = '#d46a34';
-const hoverColor = '#f1c40f';
-const ctaColor = '#6db98e';
-const borderColor = '#e0e0e0';
-
-const pageHeight = '100vh';
-
-const borders = css`
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-  }
-
-  p , ul, li{
-    color: ${secondaryText};
-  }
-
-  h1 {
-    color: ${primaryText};
-  }
-`;
-
-const BaseContainer = styled.div`
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  background-color: ${primaryBackgroundColor};
-`;
+import { theme } from './theme';
+import { BaseContainer, borders } from './commonsStyles';
 
 const AboutContainer = styled(BaseContainer)`
-  background-color: ${primaryBackgroundColor};
-  min-height: ${pageHeight};
+  background-color: ${theme.primaryBackgroundColor};
+  min-height: ${theme.pageHeight};
   padding: 5em 0;
 
   @media (max-width: 1024px) {
@@ -61,12 +21,12 @@ const AboutContainer = styled(BaseContainer)`
 const HeaderContainer = styled.div`
   display: grid;
   place-items: center;
-  height: ${pageHeight};
+  height: ${theme.pageHeight};
   text-align: center;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
-  color: ${primaryText};
+  color: ${theme.primaryText};
 
   h1 {
     font-size: 2.5em;
@@ -74,13 +34,6 @@ const HeaderContainer = styled.div`
   p {
     font-size: 1.5em;
   }
-`;
-
-const SecondaryContainer = styled.div`
-  background-color: ${secondaryBackgroundColor};
-  padding: 20px;
-  ${borders}
-  border: 1px solid ${borderColor};
 `;
 
 const AboutSecondaryContainer = styled(SecondaryContainer)`
@@ -130,7 +83,7 @@ const NavContainer = styled.div`
 const NavStyle = styled.nav`
   display: flex;
   align-items: center;
-  background-color: ${secondaryBackgroundColor};
+  background-color: ${theme.secondaryBackgroundColor};
   padding: 15px 30px;
   position: sticky;
   top: 0;
@@ -144,26 +97,12 @@ const NavStyle = styled.nav`
   }
 `;
 
-const LinkStyle = styled(Link)`
-  color: ${primaryText};
-  margin: 0 25px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
-  padding: 5px 0;
-  cursor: pointer;
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
-`;
-
 const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${secondaryBackgroundColor};
+  background-color: ${theme.secondaryBackgroundColor};
   padding-top: 20px;
   position: relative;
   bottom: 0;
@@ -177,18 +116,18 @@ const FooterIconContainer = styled.div`
   margin-bottom: 15px;
 
   & > a {
-    color: ${primaryText};
+    color: ${theme.primaryText};
     font-size: 24px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: ${buttonColor};
+      color: ${theme.buttonColor};
     }
   }
 `;
 
 const FooterText = styled.p`
-  color: ${secondaryText};
+  color: ${theme.secondaryText};
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -203,8 +142,8 @@ const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 40px;
-  min-height: ${pageHeight};
-  background-color: ${secondaryBackgroundColor};
+  min-height: ${theme.pageHeight};
+  background-color: ${theme.secondaryBackgroundColor};
   flex-direction: column;
   align-items: center;
 `;
@@ -212,7 +151,7 @@ const ProjectsContainer = styled.div`
 const ProjectCard = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${primaryBackgroundColor};
+  background-color: ${theme.primaryBackgroundColor};
   ${borders}
   padding: 20px;
   flex-direction: column;
@@ -228,13 +167,13 @@ const ProjectContent = styled.div`
 `;
 
 const ProjectTitle = styled.h2`
-  color: ${primaryText};
+  color: ${theme.primaryText};
   font-size: 1.5rem;
   margin-bottom: 10px;
 `;
 
 const ProjectDescription = styled.p`
-  color: ${secondaryText};
+  color: ${theme.secondaryText};
   font-size: 1.1rem;
   margin-bottom: 15px;
   line-height: 1.6;
@@ -247,7 +186,7 @@ const TechStack = styled.div`
 `;
 
 const TechItem = styled.span`
-  background-color: ${buttonColor};
+  background-color: ${theme.buttonColor};
   color: white;
   font-size: 0.9rem;
   padding: 5px 10px;
@@ -275,20 +214,9 @@ const ProjectImage = styled.img`
   }
 `;
 
-const ImageContainer = styled.div`
-  display: flex;
-  gap: 5px;
-  flex-direction: row;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 20px;
-  }
-`;
-
 const ContactInfo = styled.p`
   font-size: 18px;
-  color: ${secondaryText};
+  color: ${theme.secondaryText};
   text-align: center;
   margin-bottom: 20px;
 `;
@@ -299,54 +227,15 @@ const ContactContainer = styled.div`
   align-items: center;
   padding: 40px;
   justify-content: center;
-  background-color: ${primaryBackgroundColor};
-`;
-
-const GoUpButtonStyle = styled.button`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: transparent;
-  color: black;
-  border: none;
-  padding: 12px 16px;
-  cursor: pointer;
-  z-index: 10;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
-  display: ${({ $isVisible }) => ($isVisible ? 'block' : 'none')};
-`;
-
-const DownloadButton = styled.button`
-  background-color: ${buttonColor};
-  color: white;
-  border: none;
-  padding: 12px 16px;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition:
-    background-color 0.3s ease,
-    transform 0s ease;
-
-  font-weight: bold;
-
-  &:hover {
-    transform: scale(1.05);
-  }
+  background-color: ${theme.primaryBackgroundColor};
 `;
 
 export {
-  GlobalStyle,
-  BaseContainer,
   AboutContainer,
   HeaderContainer,
-  SecondaryContainer,
   AboutSecondaryContainer,
   NavStyle,
   NavContainer,
-  LinkStyle,
   FooterContainer,
   FooterIconContainer,
   FooterText,
@@ -361,17 +250,4 @@ export {
   TechItem,
   ContactInfo,
   ContactContainer,
-  GoUpButtonStyle,
-  ImageContainer,
-  DownloadButton,
-
-  //color
-  primaryBackgroundColor,
-  secondaryBackgroundColor,
-  primaryText,
-  secondaryText,
-  buttonColor,
-  hoverColor,
-  ctaColor,
-  borderColor,
 };

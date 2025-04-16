@@ -1,15 +1,10 @@
 import { Link } from 'react-scroll';
-import {
-  HeaderContainer,
-  SecondaryContainer,
-  NavStyle,
-  hoverColor,
-  NavContainer,
-  primaryText,
-} from '../styles/styles';
+import { HeaderContainer, NavStyle, NavContainer } from '../styles/styles';
+import { theme } from '../styles/theme';
+import { SecondaryContainer, LinkStyle } from '../styles/commonsStyles';
 
 const linkStyle = {
-  color: primaryText,
+  color: theme.primaryText,
   margin: '0 25px',
   fontSize: '18px',
   fontWeight: '600',
@@ -22,12 +17,12 @@ const linkStyle = {
 };
 
 const onOver = (e) => {
-  e.target.style.color = hoverColor;
+  e.target.style.color = theme.hoverColor;
   e.target.style.transform = 'scale(1.1)';
 };
 
 const onOut = (e) => {
-  e.target.style.color = primaryText;
+  e.target.style.color = theme.primaryText;
   e.target.style.transform = 'scale(1)';
 };
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GoUpButtonStyle } from '../styles/styles';
+import { GoUpButtonStyle } from '../styles/commonsStyles';
 import { FaArrowUp } from 'react-icons/fa';
 
 const GoUpButton = () => {

@@ -7,8 +7,8 @@ import {
   ProjectDescription,
   TechStack,
   TechItem,
-  ImageContainer,
 } from '../styles/styles';
+import { ImageContainer } from '../styles/commonsStyles';
 import knGroupPage from '../assets/kn_group_page.png';
 import knEdit from '../assets/kn_edit.png';
 
