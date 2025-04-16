@@ -9,7 +9,7 @@ import {
   FooterIconContainer,
   FooterText,
   FooterLink,
-} from '../styles/styles';
+} from '../styles/footerStyles';
 function Footer() {
   return (
     <FooterContainer>

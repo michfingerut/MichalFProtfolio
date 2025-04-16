@@ -97,47 +97,6 @@ const NavStyle = styled.nav`
   }
 `;
 
-const FooterContainer = styled.footer`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: ${theme.secondaryBackgroundColor};
-  padding-top: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-`;
-
-const FooterIconContainer = styled.div`
-  display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
-
-  & > a {
-    color: ${theme.primaryText};
-    font-size: 24px;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: ${theme.buttonColor};
-    }
-  }
-`;
-
-const FooterText = styled.p`
-  color: ${theme.secondaryText};
-  font-size: 14px;
-  text-align: center;
-  margin-top: 10px;
-`;
-
-const FooterLink = styled.a`
-  display: inline-block;
-  text-decoration: none;
-`;
-
 const ProjectsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -236,10 +195,6 @@ export {
   AboutSecondaryContainer,
   NavStyle,
   NavContainer,
-  FooterContainer,
-  FooterIconContainer,
-  FooterText,
-  FooterLink,
   ProjectsContainer,
   ProjectCard,
   ProjectImage,
