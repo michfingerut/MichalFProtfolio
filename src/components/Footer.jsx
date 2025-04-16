@@ -1,15 +1,19 @@
+// External modules
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { IoLogoLinkedin } from 'react-icons/io';
 import { Tooltip } from '@mui/material';
+
+// Internal modules
 import {
   FooterContainer,
   FooterIconContainer,
   FooterText,
   FooterLink,
 } from '../styles/footerStyles';
+
 function Footer() {
   return (
     <FooterContainer>

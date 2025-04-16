@@ -1,6 +1,9 @@
+// External modules
 import React, { useState, useEffect } from 'react';
-import { GoUpButtonStyle } from '../styles/commonsStyles';
 import { FaArrowUp } from 'react-icons/fa';
+
+// Internal modules
+import { GoUpButtonStyle } from '../styles/commonsStyles';
 
 const GoUpButton = () => {
   const [isVisible, setIsVisible] = useState(false);

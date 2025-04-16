@@ -1,3 +1,4 @@
+// Internal modules
 import { ContactInfo, ContactContainer } from '../styles/contactStyles';
 import { DownloadButton } from '../styles/commonsStyles';
 
