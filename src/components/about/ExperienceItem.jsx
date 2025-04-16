@@ -1,5 +1,6 @@
 // External modules
 import React from 'react';
+import { theme } from '../../styles/theme';
 
 const ExperienceItem = ({ title, company, period, descriptions }) => {
   return (
@@ -7,7 +8,7 @@ const ExperienceItem = ({ title, company, period, descriptions }) => {
       <p>
         {company}
         <br />
-        <b>{title}</b>
+        <b style={{ color: theme.primaryText }}>{title}</b>
         <br />
         {period}
         <br />
