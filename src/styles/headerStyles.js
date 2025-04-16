@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
-import backgroundImage from '../assets/laptop-with-notepad-beige-background.jpg';
+import backgroundImage from '../assets/background.jpeg';
 
 export const HeaderContainer = styled.div`
   display: grid;

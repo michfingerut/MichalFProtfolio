@@ -23,12 +23,11 @@ export const FooterIconContainer = styled.div`
   margin-bottom: 15px;
 
   & > a {
-    color: ${theme.primaryText};
     font-size: 24px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: ${theme.buttonColor};
+      color: ${theme.hoverColor};
     }
   }
 `;
