@@ -1,5 +1,5 @@
 // External modules
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 // Internal modules
 import { theme } from './theme';
