@@ -28,8 +28,7 @@ export const ProjectDescription = styled.p`
 `;
 
 export const ProjectImage = styled.img`
-  width: 50%;
-  height: 70%;
+  width: 80%;
   object-fit: cover;
   border-radius: 10px;
   transition:

@@ -50,13 +50,9 @@ export const DownloadButton = styled.button`
 
 export const ImageContainer = styled.div`
   display: flex;
-  gap: 5px;
-  flex-direction: row;
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 20px;
-  }
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const GoUpButtonStyle = styled.button`
