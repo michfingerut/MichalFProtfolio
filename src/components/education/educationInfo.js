@@ -19,7 +19,7 @@ export const educationItems = [
   {
     degree: 'BSC, Optometry (Cum Laude)',
     institution: 'Bar Ilan University',
-    period: '2017-2021',
+    period: '2017 - 2021',
     techStack: [
       'Refraction & Vision Testing',
       'Ocular Disease Recognition',

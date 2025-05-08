@@ -31,7 +31,7 @@ export const infinityExp = [
   {
     title: 'Full Stack Developer - Dev core team',
     company: 'Infinity Labs R&D',
-    period: '2024-2025',
+    period: '2024 - present',
     descriptions: [
       'Part of the core development team which is responsible for architectural decisions, defining company-wide development conventions, and developing the infrastructure of the application, which includes multiple microservices under its responsibility.',
       'Developed and maintained a micro-service for guest users invites management system.',
@@ -64,7 +64,7 @@ export const infinityExp = [
   {
     title: 'Full Stack Developer - Dashboard team',
     company: 'Infinity Labs R&D',
-    period: '2022-2024',
+    period: '2022 - 2024',
     descriptions: [
       'Oversaw the entire development lifecycle of an educational Saas web application (SOA based) for students. Responsibilities included designing and implementing REST APIs, adding new features, and performing ongoing maintenance to improve functionality and user experience.',
       'Acted as the main software developer in the team, defining workflows, operational procedures, and guidelines for development, and served as the primary point of contact for support and technical questions from team members.',
