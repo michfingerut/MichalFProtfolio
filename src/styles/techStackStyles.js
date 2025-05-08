@@ -33,13 +33,17 @@ export const SearchInput = styled.input`
   color: ${({ theme }) => theme.primaryText};
   font-size: 1rem;
   width: 100%;
-  max-width: 20%;
+  max-width: 30%;
   margin-bottom: 1rem;
 
   &:focus {
     outline: none;
     border-color: ${({ theme }) => theme.buttonColor};
     box-shadow: 0 0 0 2px ${({ theme }) => `${theme.buttonColor}40`};
+  }
+
+  @media (max-width: 768px) {
+    max-width: 60%;
   }
 `;
 
