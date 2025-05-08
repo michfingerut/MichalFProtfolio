@@ -4,7 +4,7 @@ Welcome to my portfolio! I’m Michal, a passionate full-stack developer focused
 
 ## Technologies Used
 
-- **Frontend**: React.js, JavaScript, HTML, CSS
+- **Frontend**: React.js, JavaScript, Styled components, HTML, CSS
 - **Deployment**: GitHub Pages
 
 ## View the Project

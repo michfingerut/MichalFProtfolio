@@ -14,8 +14,8 @@ export const projects = [
       'Express',
       'Sequelize',
       'Material UI',
-      'axios',
-      'styled components',
+      'Axios',
+      'Styled components',
       'Jest',
       'PostgreSQL',
       'Docker',
@@ -34,6 +34,19 @@ export const projects = [
       'Object oriented programming',
       'Jest',
       'Docker',
+    ],
+  },
+  {
+    name: 'Developer Portfolio',
+    description:
+      'A personal portfolio website built with React to showcase projects, skills, and contact information. Hosted on GitHub Pages with a responsive design and clean user interface.',
+    techStack: [
+      'React.js',
+      'JavaScript',
+      'Styled components',
+      'HTML',
+      'CSS',
+      'GitHub Pages',
     ],
   },
 ];
