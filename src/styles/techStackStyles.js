@@ -50,21 +50,6 @@ export const ResultsContainer = styled.div`
   background-color: ${({ theme }) => theme.primaryBackgroundColor};
   border: 1px solid ${({ theme }) => theme.borderColor};
   padding: 0.5rem;
-  scrollbar-width: thin;
-
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: ${({ theme }) =>
-      theme.isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)'};
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.buttonColor};
-    border-radius: 3px;
-  }
 `;
 
 export const ResultItem = styled.div`
