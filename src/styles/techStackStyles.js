@@ -14,3 +14,70 @@ export const TechItem = styled.span`
   padding: 5px 10px;
   border-radius: 20px;
 `;
+
+export const FilterHeader = styled.h2`
+  color: ${({ theme }) => theme.primaryText};
+  font-size: 1.4rem;
+`;
+
+export const FilterLabel = styled.label`
+  color: ${({ theme }) => theme.secondaryText};
+  margin-right: 0.75rem;
+`;
+
+export const SearchInput = styled.input`
+  padding: 0.6rem 1rem;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 1px solid ${({ theme }) => theme.borderColor};
+  background-color: ${({ theme }) => theme.primaryBackgroundColor};
+  color: ${({ theme }) => theme.primaryText};
+  font-size: 1rem;
+  width: 100%;
+  max-width: 20%;
+  margin-bottom: 1rem;
+
+  &:focus {
+    outline: none;
+    border-color: ${({ theme }) => theme.buttonColor};
+    box-shadow: 0 0 0 2px ${({ theme }) => `${theme.buttonColor}40`};
+  }
+`;
+
+export const ResultsContainer = styled.div`
+  height: 200px;
+  overflow-y: auto;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  background-color: ${({ theme }) => theme.primaryBackgroundColor};
+  border: 1px solid ${({ theme }) => theme.borderColor};
+  padding: 0.5rem;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: ${({ theme }) =>
+      theme.isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.05)'};
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.buttonColor};
+    border-radius: 3px;
+  }
+`;
+
+export const ResultItem = styled.div`
+  padding: 0.5rem 0.75rem;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  margin-bottom: 0.5rem;
+  background-color: ${({ theme }) => `${theme.buttonColor}15`};
+  color: ${({ theme }) => theme.primaryText};
+  border-left: 2px solid ${({ theme }) => theme.buttonColor};
+  transition: ${({ theme }) => theme.transition};
+
+  &:hover {
+    background-color: ${({ theme }) => `${theme.buttonColor}30`};
+    transform: translateX(2px);
+  }
+`;
