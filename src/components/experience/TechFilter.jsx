@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from 'react';
 
 // Internal modules
 import { useDebounce } from '../utils/CustomHooks';
-import { infinityExp } from './experienceInfo';
+import { workExp } from './experienceInfo';
 import {
   ResultItem,
   ResultsContainer,
@@ -50,7 +50,7 @@ function TechFilter() {
   const techItems = useMemo(() => {
     const set = new Set();
 
-    infinityExp.forEach((exp) => {
+    workExp.forEach((exp) => {
       exp.techStack.forEach((item) => {
         set.add(item);
       });

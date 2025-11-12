@@ -27,11 +27,34 @@ export const techStackExp = [
   'Linux-based environment',
 ];
 
-export const infinityExp = [
+export const workExp = [
+  {
+    title: 'Full Stack Developer',
+    company: 'Arato ai',
+    period: '2025 - present',
+    descriptions: [
+      'Worked on AI-driven web applications, designing and implementing both front-end and back-end components. Focused on building scalable, high-performance solutions while collaborating in an agile environment to deliver data-intensive features.',
+    ],
+    techStack: [
+      'Python',
+      'TypeScript',
+      'React',
+      'DynamoDB',
+      'AWS Lambda',
+      'CloudWatch',
+      'Git',
+      'Docker',
+      'AWS',
+      'Serverless architecture',
+      'Event driven architecture',
+      'Test driven development',
+      'REST API',
+    ],
+  },
   {
     title: 'Full Stack Developer - Dev core team',
     company: 'Infinity Labs R&D',
-    period: '2024 - present',
+    period: '2024 - 2025',
     descriptions: [
       'Part of the core development team which is responsible for architectural decisions, defining company-wide development conventions, and developing the infrastructure of the application, which includes multiple microservices under its responsibility.',
       'Developed and maintained a micro-service for guest users invites management system.',

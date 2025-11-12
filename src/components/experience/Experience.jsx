@@ -4,7 +4,7 @@ import { Element } from 'react-scroll';
 // Internal modules
 import ExperienceSection from './ExperienceSection';
 import { ExpContainer } from '../../styles/expStyles';
-import { infinityExp } from './experienceInfo';
+import { workExp } from './experienceInfo';
 import TechFilter from './TechFilter';
 
 function Experience() {
@@ -13,7 +13,7 @@ function Experience() {
       <ExpContainer>
         <h1>Experience</h1>
         <TechFilter />
-        <ExperienceSection experience={infinityExp} />
+        <ExperienceSection experience={workExp} />
       </ExpContainer>
     </Element>
   );
